@@ -1,0 +1,36 @@
+{
+  "name": "soe_basic",
+  "version": "1.0.0",
+  "repository": "https://github.com/SU-SOE/soe_basic",
+  "config": {
+    "srcSass": "src/scss",
+    "distSass": "dist/css",
+    "srcJS": "src/js",
+    "distJS": "dist/js",
+    "srcAssets": "src/assets",
+    "distAssets": "dist/assets"
+  },
+  "scripts": {
+    "build": "webpack --mode=development --display-error-details",
+    "publish": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch",
+    "lint:js": "eslint -c .eslintrc 'src/js'",
+    "lint:sass": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss'"
+  },
+  "devDependencies": {
+  },
+  "description": "=========================== How to Use Grunt with Stanford Basic ===========================",
+  "main": "Gruntfile.js",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "Drupal",
+    "Stanford"
+  ],
+  "dependencies": {
+    "drupal-behaviors-loader": "^1.0",
+    "npm": "^6.12.1"
+  }
+}
