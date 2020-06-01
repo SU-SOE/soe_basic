@@ -11,3 +11,31 @@
 .bg-orange {
   background-color: $soe-color-orange;
 }
+
+// gradients, using utilities/mixins/gradients.scss
+
+// solid gradients
+.gradient--solid-purple-lagunita {
+  @include gradient--solid-purple-lagunita;
+}
+
+.gradient--solid-purple-green {
+  @include gradient--solid-purple-green;
+}
+
+// transparent gradients
+.gradient--transparent-purple-lagunita {
+  @include gradient--transparent-purple-lagunita;
+}
+
+.gradient--transparent-purple-green {
+  @include gradient--transparent-purple-green;
+}
+
+.gradient--transparent-purple-red {
+  @include gradient--transparent-purple-red;
+}
+
+.gradient--transparent-blue-green {
+  @include gradient--transparent-blue-green;
+}

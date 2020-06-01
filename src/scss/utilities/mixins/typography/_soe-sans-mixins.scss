@@ -1,0 +1,78 @@
+
+$soe-font--sans: Source Sans Pro;
+
+@mixin soe-sans {
+  font-family: $soe-font--sans;
+}
+
+.soe-sans {
+  @include soe-sans;
+}
+
+// Note that main difference with basic styles is font-weight
+@mixin soe-type-base {
+  font-family: $soe-font--sans; // should already be, but we can make sure
+  font-weight: 900;
+  //color: $su-color-black; // kerri do we need this?
+}
+
+// SOE Type 5 maps to su-type-a, SOE Type 4 to b, etc.
+
+@mixin soe--type-5 {
+  @include soe-type-base;
+  @include modular-typography(5);
+}
+
+.soe--type-5, .su-type-a,  h1 {
+  @include soe--type-5;
+}
+
+@mixin soe--type-4 {
+  @include soe-type-base;
+  @include modular-typography(4);
+}
+
+.soe--type-4, .su-type-b {
+  @include soe--type-4;
+}
+
+@mixin soe--type-3 {
+  @include soe-type-base;
+  @include modular-typography(3);
+}
+
+// Su-type-c
+.soe--type-3, .su-type-c, h2 {
+  @include soe--type-3;
+}
+
+@mixin soe--type-2 {
+  @include soe-type-base;
+  @include modular-typography(2);
+}
+
+.soe--type-2, .su-type-d, h3 {
+  @include soe--type-2;
+}
+
+@mixin soe--type-1 {
+  @include soe-type-base;
+  @include modular-typography(1);
+}
+
+.soe--type-1, .su-type-e, h4 {
+  @include soe--type-1;
+}
+
+@mixin soe--type-0 {
+  @include soe-type-base;
+  @include modular-typography(0);
+}
+
+.soe--type-0, .su-type-f, h5 {
+  @include soe--type-0;
+}
+
+// these should be overridden to soe font weight 900 from code above ^
+//callout
+//splashtext
