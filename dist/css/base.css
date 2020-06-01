@@ -7703,6 +7703,11 @@ h2, h3, h4, h5, h6 {
 .soe-sans {
   font-family: Source Sans Pro; }
 
+.su-wysiwyg-text .su-font-splash,
+.su-wysiwyg-text p.su-callout-text {
+  font-family: Source Sans Pro;
+  font-weight: 900; }
+
 .soe--type-5, .su-type-a, h1 {
   font-family: Source Sans Pro;
   font-weight: 900;
@@ -7716,23 +7721,26 @@ h2, h3, h4, h5, h6 {
 .soe--type-3, .su-type-c, h2, .su-wysiwyg-text h2 {
   font-family: Source Sans Pro;
   font-weight: 900;
-  font-size: 1.953125em;
-  color: deeppink !important; }
+  font-size: 1.953125em; }
 
 .soe--type-2, .su-type-d, h3, .su-wysiwyg-text h3 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.5625em; }
 
-.soe--type-1, .su-type-e, h4 {
+.soe--type-1, .su-type-e, h4, .su-wysiwyg-text h4 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.25em; }
 
-.soe--type-0, .su-type-f, h5 {
+.soe--type-0, .su-type-f, h5, .su-wysiwyg-text h5 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1em; }
+
+.su-drop-cap::first-letter {
+  font-family: Source Sans Pro;
+  font-weight: 900; }
 
 
 /*# sourceMappingURL=base.css.map*/

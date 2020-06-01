@@ -7,7 +7,7 @@ $soe-font--sans: Source Sans Pro;
 
 
 // Note that main difference with basic styles is font-weight
-@mixin soe-type-base {
+@mixin soe-type-sans-base {
   font-family: $soe-font--sans; // should already be, but we can make sure
   font-weight: 900;
   //color: $su-color-black; // kerri do we need this?
@@ -16,31 +16,31 @@ $soe-font--sans: Source Sans Pro;
 // SOE Type 5 maps to su-type-a, SOE Type 4 to b, etc.
 
 @mixin soe--type-5 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(5);
 }
 
 @mixin soe--type-4 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(4);
 }
 
 @mixin soe--type-3 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(3);
 }
 
 @mixin soe--type-2 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(2);
 }
 
 @mixin soe--type-1 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(1);
 }
 
 @mixin soe--type-0 {
-  @include soe-type-base;
+  @include soe-type-sans-base;
   @include modular-typography(0);
 }
