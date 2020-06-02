@@ -43,7 +43,7 @@ const distAssets =  path.resolve(distDir, 'assets');
 // Start configuring webpack.
 var webpackConfig = {
   // What am i?
-  name: 'stanford_starter',
+  name: 'soe_basic',
   // Allows for map files.
   devtool: 'source-map',
   // What build?
