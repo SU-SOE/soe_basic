@@ -9,7 +9,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer')({ grid: true });
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -22,15 +22,15 @@ const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 // Paths ///////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////////
 
-const npmPackage = 'node_modules/';
-const srcDir = path.resolve(__dirname, "src");
-const distDir = path.resolve(__dirname, "dist");
-const srcSass = path.resolve(__dirname, process.env.npm_package_config_srcSass);
-const distSass = path.resolve(__dirname, process.env.npm_package_config_distSass);
-const srcJS = path.resolve(__dirname, process.env.npm_package_config_srcJS);
-const distJS = path.resolve(__dirname, process.env.npm_package_config_distJS);
-const srcAssets = path.resolve(__dirname, process.env.npm_package_config_srcAssets);
-const distAssets = path.resolve(__dirname, process.env.npm_package_config_distAssets);
+const npmPackage =  path.resolve(__dirname, 'node_modules');
+const srcDir =      path.resolve(__dirname, "src");
+const distDir =     path.resolve(__dirname, "dist");
+const srcSass =     path.resolve(srcDir, 'scss');
+const distSass =    path.resolve(distDir, 'css');
+const srcJS =       path.resolve(srcDir, 'js');
+const distJS =      path.resolve(distDir, 'js');
+const srcAssets =   path.resolve(srcDir, 'assets');
+const distAssets =  path.resolve(distDir, 'assets');
 
 // /////////////////////////////////////////////////////////////////////////////
 // Functions ///////////////////////////////////////////////////////////////////
@@ -43,32 +43,23 @@ const distAssets = path.resolve(__dirname, process.env.npm_package_config_distAs
 // Start configuring webpack.
 var webpackConfig = {
   // What am i?
-  name: 'stanford_basic',
+  name: 'soe_basic',
   // Allows for map files.
   devtool: 'source-map',
   // What build?
   entry: {
-    "base": path.resolve(__dirname, srcJS + "/base.js"),
-    "behaviors": path.resolve(__dirname, srcJS + "/behaviors.js"),
-    "components": path.resolve(__dirname, srcSass + "/components/index.scss"),
-    "layout": path.resolve(__dirname, srcSass + "/layout/index.scss"),
-    "print": path.resolve(__dirname, srcSass + "/print/index.scss"),
-    "state": path.resolve(__dirname, srcSass + "/state/index.scss"),
-    "theme": path.resolve(__dirname, srcSass + "/theme/index.scss"),
-    "ckeditor": path.resolve(__dirname, srcSass + "/ckeditor.scss"),
+    "base":          path.resolve(srcSass, "base/index.scss"),
+    "scripts":       path.resolve(srcJS,   "scripts.js"),
+    "components":    path.resolve(srcSass, "components/index.scss"),
+    "layout":        path.resolve(srcSass, "layout/index.scss"),
+    "print":         path.resolve(srcSass, "print/index.scss"),
+    "state":         path.resolve(srcSass, "state/index.scss"),
+    "theme":         path.resolve(srcSass, "theme/index.scss"),
   },
   // Where put build?
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, distJS)
-  },
-  // Relative output paths for css assets.
-  resolve: {
-    alias: {
-      'decanter-assets': path.resolve(npmPackage + 'decanter/core/src/img'),
-      'decanter-src': path.resolve(npmPackage + 'decanter/core/src'),
-      '@fortawesome': path.resolve(npmPackage + '@fortawesome'),
-    }
+    path: path.resolve(distJS)
   },
   // Additional module rules.
   module: {
@@ -111,7 +102,7 @@ var webpackConfig = {
             options: {
               sourceMap: true,
               plugins: () => [
-                autoprefixer( {} )
+                autoprefixer
               ]
             }
           },
@@ -120,10 +111,7 @@ var webpackConfig = {
             loader: 'sass-loader',
             options: {
               includePaths: [
-                path.resolve(__dirname, srcSass),
-                path.resolve(__dirname, npmPackage, "bourbon/core"),
-                path.resolve(__dirname, npmPackage + "/decanter/core/src/scss"),
-                path.resolve(__dirname, npmPackage)
+                path.resolve(npmPackage)
               ],
               sourceMap: true,
               lineNumbers: true,
@@ -150,18 +138,11 @@ var webpackConfig = {
           // A loader for webpack which transforms files into base64 URIs.
           // https://github.com/webpack-contrib/url-loader
           {
-            loader: 'url-loader',
+            loader: "file-loader",
             options: {
-              // Maximum size of a file in bytes. 8.192 Kilobtyes.
-              limit: 8192,
-              fallback: {
-                loader: "file-loader",
-                options: {
-                  name: "[name].[ext]",
-                  publicPath: "../assets/img",
-                  outputPath: "../assets/img"
-                }
-              }
+              name: "[name].[ext]",
+              publicPath: "../assets/img",
+              outputPath: "../assets/img"
             }
           }
         ]
@@ -170,21 +151,12 @@ var webpackConfig = {
       {
         test: /\.(svg)$/i,
         use: [
-          // A loader for webpack which transforms files into base64 URIs.
-          // https://github.com/webpack-contrib/url-loader
           {
-            loader: 'url-loader',
+            loader: "file-loader",
             options: {
-              // Maximum size of a file in bytes. 8.192 Kilobtyes.
-              limit: 8192,
-              fallback: {
-                loader: "file-loader",
-                options: {
-                  name: "[name].[ext]",
-                  publicPath: "../assets/svg",
-                  outputPath: "../assets/svg"
-                }
-              }
+              name: "[name].[ext]",
+              publicPath: "../assets/svg",
+              outputPath: "../assets/svg"
             }
           }
         ]

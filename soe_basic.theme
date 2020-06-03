@@ -4,3 +4,10 @@
  * @file
  * Preprocess functions for SOE Basic.
  */
+
+/**
+ * Prepares variables for the html.html.twig template.
+ */
+function soe_basic_preprocess_html(&$variables) {
+  $variables['stanford_basic_path'] = drupal_get_path('theme', 'stanford_basic');
+}
