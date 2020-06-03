@@ -7692,12 +7692,6 @@ a {
     top: 0.8em;
     z-index: 11222; }
 
-h2, h3, h4, h5, h6 {
-  font-family: Source Sans Pro; }
-
-h2, h3, h4, h5, h6 {
-  font-family: Source Sans Pro; }
-
 /* SOE Specific colors, Stanford/Decanter colors are not defined here */
 /* font overrides for SOE */
 .soe-sans {
@@ -7741,6 +7735,9 @@ h2, h3, h4, h5, h6 {
 .su-drop-cap::first-letter {
   font-family: Source Sans Pro;
   font-weight: 900; }
+
+h2, h3, h4, h5, h6 {
+  font-family: Source Sans Pro; }
 
 
 /*# sourceMappingURL=base.css.map*/

@@ -11,11 +11,9 @@ $soe-font--sans: Source Sans Pro;
 @mixin soe-type-sans-base {
   font-family: $soe-font--sans; // should already be, but we can make sure
   font-weight: 900;
-  //color: $su-color-black; // kerri do we need this?
 }
 
 // SOE Type 5 maps to su-type-a, SOE Type 4 to b, etc.
-
 @mixin soe--type-5 {
   @include soe-type-sans-base;
   @include modular-typography(5);

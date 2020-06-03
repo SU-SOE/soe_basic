@@ -96,7 +96,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _soe_basic_behaviors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./soe_basic.behaviors */ "./src/js/soe_basic.behaviors.js");
-/* harmony import */ var _soe_basic_behaviors__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_soe_basic_behaviors__WEBPACK_IMPORTED_MODULE_0__);
 // Theme code.
 
 
@@ -106,9 +105,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./src/js/soe_basic.behaviors.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /**
  * Behavior Example that works with Webpack.
  *
@@ -117,14 +118,14 @@ __webpack_require__.r(__webpack_exports__);
  * Webpack wraps everything in enclosures and hides the global variables from
  * scripts so special handling is needed.
  */
-window.Drupal.behaviors.soe_basic = {
+/* harmony default export */ __webpack_exports__["default"] = ({
   // Attach Drupal Behavior.
   attach: function attach(context, settings) {// console.log("Attached.");
   },
   // Detach Example.
   detach: function detach() {// console.log("Detached.");
   }
-};
+});
 
 /***/ })
 

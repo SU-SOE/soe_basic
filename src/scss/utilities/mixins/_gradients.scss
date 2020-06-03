@@ -19,7 +19,6 @@
 }
 
 @mixin gradient--transparent-purple-red {
-  //background: linear-gradient(270.22deg, #620059 0.12%, rgba(177, 4, 14, 0.8) 99.89%);
   background: linear-gradient(270.22deg, $su-color-bright-purple 0.12%, rgba($su-color-bright-red, 0.8) 99.89%);
   transform: rotate(-180deg);
 }

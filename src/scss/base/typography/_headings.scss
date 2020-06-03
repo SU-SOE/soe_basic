@@ -1,7 +1,5 @@
-h1 {
-  // anything kerri?
-  //@include soe-sans;
-}
+@charset "UTF-8";
+
 h2, h3, h4, h5, h6 {
   @include soe-sans;
 }
