@@ -7702,32 +7702,46 @@ a {
   font-family: Source Sans Pro;
   font-weight: 900; }
 
-.soe--type-5, .su-type-a, h1 {
+.soe--type-5,
+.su-type-a {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 3.0517578125em; }
 
-.soe--type-4, .su-type-b {
+.soe--type-4,
+.su-type-b {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 2.44140625em; }
 
-.soe--type-3, .su-type-c, h2, .su-wysiwyg-text h2 {
+.soe--type-3,
+.su-type-c,
+h2,
+.su-wysiwyg-text h2 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.953125em; }
 
-.soe--type-2, .su-type-d, h3, .su-wysiwyg-text h3 {
+.soe--type-2,
+.su-type-d,
+h3,
+.su-wysiwyg-text h3 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.5625em; }
 
-.soe--type-1, .su-type-e, h4, .su-wysiwyg-text h4 {
+.soe--type-1,
+.su-type-e,
+h4,
+.su-wysiwyg-text h4 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.25em; }
 
-.soe--type-0, .su-type-f, h5, .su-wysiwyg-text h5 {
+.soe--type-0,
+.su-type-f,
+h5,
+.su-wysiwyg-text h5 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1em; }
@@ -7736,7 +7750,16 @@ a {
   font-family: Source Sans Pro;
   font-weight: 900; }
 
-h2, h3, h4, h5, h6 {
+h1 {
+  font-family: Source Sans Pro;
+  font-weight: 900;
+  font-size: 3.0517578125em; }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Source Sans Pro; }
 
 

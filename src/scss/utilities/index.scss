@@ -5,8 +5,5 @@
 // Import full scss version of decanter to use variables etc
 @import 'decanter/core/src/scss/decanter';
 
-
-
-@import
-'mixins/index',
-'variables/index';
+@import 'mixins/index';
+@import 'variables/index';
