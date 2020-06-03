@@ -7439,19 +7439,19 @@ a {
 /* set up background classes to be used in various contexts */
 /* SOE Specific colors, Stanford/Decanter colors are not defined here */
 .bg-pink {
-  background-color: #FF525C; }
+  background-color: #ff525c; }
 
 .bg-turquoise {
-  background-color: #00ECE9; }
+  background-color: #00ece9; }
 
 .bg-orange {
-  background-color: #FFBD54; }
+  background-color: #ffbd54; }
 
 .gradient--solid-purple-lagunita {
   background: linear-gradient(91.01deg, #53284f 3.46%, #007c92 95.48%); }
 
 .gradient--solid-purple-green {
-  background: linear-gradient(91.01deg, #620059 3.46%, #017E7C 95.48%); }
+  background: linear-gradient(91.01deg, #620059 3.46%, #017e7c 95.48%); }
 
 .gradient--transparent-purple-lagunita {
   background: linear-gradient(91.01deg, rgba(98, 0, 89, 0.9) 3.47%, rgba(0, 124, 146, 0.8) 95.48%); }

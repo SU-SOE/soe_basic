@@ -7716,31 +7716,47 @@ a {
 
 .soe--type-3,
 .su-type-c,
-h2,
-.su-wysiwyg-text h2 {
+h2 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.953125em; }
 
 .soe--type-2,
 .su-type-d,
-h3,
-.su-wysiwyg-text h3 {
+h3 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.5625em; }
 
 .soe--type-1,
 .su-type-e,
-h4,
-.su-wysiwyg-text h4 {
+h4 {
   font-family: Source Sans Pro;
   font-weight: 900;
   font-size: 1.25em; }
 
 .soe--type-0,
 .su-type-f,
-h5,
+h5 {
+  font-family: Source Sans Pro;
+  font-weight: 900;
+  font-size: 1em; }
+
+.su-wysiwyg-text h2 {
+  font-family: Source Sans Pro;
+  font-weight: 900;
+  font-size: 1.953125em; }
+
+.su-wysiwyg-text h3 {
+  font-family: Source Sans Pro;
+  font-weight: 900;
+  font-size: 1.5625em; }
+
+.su-wysiwyg-text h4 {
+  font-family: Source Sans Pro;
+  font-weight: 900;
+  font-size: 1.25em; }
+
 .su-wysiwyg-text h5 {
   font-family: Source Sans Pro;
   font-weight: 900;
