@@ -3,6 +3,7 @@
 /* set up background classes to be used in various contexts */
 @import '../utilities/variables/colors';
 @import '../utilities/mixins/gradients';
+
 .bg-pink {
   background-color: $soe-color-pink;
 }
