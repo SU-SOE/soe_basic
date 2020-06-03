@@ -1,7 +1,7 @@
 {
-  "name": "stanford_starter",
+  "name": "soe_basic",
   "version": "1.0.0",
-  "repository": "https://github.com/SU-SWS/stanford_starter",
+  "repository": "https://github.com/SU-SOE/soe_basic",
   "scripts": {
     "build": "webpack --mode=development --display-error-details",
     "publish": "webpack --mode=production",
@@ -46,7 +46,7 @@
     "webpack-fix-style-only-entries": "^0.2",
     "webpack-manifest-plugin": "^2.2"
   },
-  "description": "= Stanford Starter =",
+  "description": "= SOE Basic =",
   "author": "",
   "license": "MIT",
   "dependencies": {

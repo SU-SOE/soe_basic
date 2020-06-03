@@ -6,7 +6,7 @@ Changelog: [Changelog.txt](CHANGELOG.txt)
 Description
 ---
 
-Stanford Starter is a Stanford sub-theme that works with the Stanford Basic theme.
+SOE Basic is a Stanford sub-theme that works with the Stanford Basic theme.
 
 Installation
 ---
