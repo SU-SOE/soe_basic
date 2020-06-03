@@ -67,7 +67,7 @@ var webpackConfig = {
       // Drupal behaviors need special handling with webpack.
       // https://www.npmjs.com/package/drupal-behaviors-loader
       {
-        // test: /\.behavior.js$/,
+        test: /\.behavior.js$/,
         exclude: /node_modules/,
         options: {
           enableHmr: false
