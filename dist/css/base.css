@@ -7766,17 +7766,14 @@ h5 {
   font-family: Source Sans Pro;
   font-weight: 900; }
 
-h1 {
-  font-family: Source Sans Pro;
-  font-weight: 900;
-  font-size: 3.0517578125em; }
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Source Sans Pro; }
+  font-family: Source Sans Pro;
+  font-weight: 900; }
 
 
 /*# sourceMappingURL=base.css.map*/
