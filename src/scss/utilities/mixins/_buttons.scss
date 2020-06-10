@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@mixin soe-button-common {
+  color: $su-color-black;
+  padding: 12px 40px 18px 40px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+@mixin soe-button--turquoise {
+  @include soe-button-common;
+  background-color: $soe-color-turquoise;
+}
+
+@mixin soe-button--pink {
+  @include soe-button-common;
+  background-color: $soe-color-pink;
+}
+
+@mixin soe-button--orange {
+  @include soe-button-common;
+  background-color: $soe-color-orange;
+}
