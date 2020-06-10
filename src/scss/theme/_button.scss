@@ -8,6 +8,12 @@
 .su-button {
   padding: 12px 30px;
 
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   &.soe-button--turquoise {
     @include soe-button--turquoise;
   }
