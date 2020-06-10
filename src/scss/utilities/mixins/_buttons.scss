@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @mixin soe-button-common {
+  @include button-primary;
   color: $su-color-black;
   padding: 12px 40px 18px 40px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -8,6 +9,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    text-decoration: none;
   }
 }
 
