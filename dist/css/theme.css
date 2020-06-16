@@ -14598,33 +14598,33 @@ a {
     z-index: 11222; }
 
 /* SOE Specific colors, Stanford/Decanter colors are not defined here */
-.bg-soe-pink {
+.soe-bg--pink {
   background-color: #ff525c; }
 
-.bg-soe-turquoise {
+.soe-bg-turquoise {
   background-color: #00ece9; }
 
-.bg-soe-orange {
+.soe-bg-orange {
   background-color: #ffbd54; }
 
-.gradient--solid-purple-lagunita {
+.soe-gradient--solid-purple-lagunita {
   background: linear-gradient(91.01deg, #53284f 3.46%, #007c92 95.48%); }
 
-.gradient--solid-purple-green {
+.soe-gradient--solid-purple-green {
   background: linear-gradient(91.01deg, #620059 3.46%, #017e7c 95.48%); }
 
-.gradient--transparent-purple-lagunita {
+.soe-gradient--transparent-purple-lagunita {
   background: linear-gradient(91.01deg, rgba(98, 0, 89, 0.9) 3.47%, rgba(0, 124, 146, 0.8) 95.48%); }
 
-.gradient--transparent-purple-green {
+.soe-gradient--transparent-purple-green {
   background: linear-gradient(89.49deg, rgba(98, 0, 89, 0.9) 0.24%, rgba(1, 126, 124, 0.8) 102.73%); }
 
-.gradient--transparent-purple-red {
+.soe-gradient--transparent-purple-red {
   background: linear-gradient(270.22deg, #620059 0.12%, rgba(177, 4, 14, 0.8) 99.89%);
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg); }
 
-.gradient--transparent-blue-green {
+.soe-gradient--transparent-blue-green {
   background: linear-gradient(270.22deg, rgba(1, 104, 149, 0.9) 0.12%, rgba(1, 126, 124, 0.8) 99.89%); }
 
 .su-cta .su-cta__button, .su-button,
@@ -22144,65 +22144,66 @@ a {
     z-index: 11222; }
 
 /* SOE Specific colors, Stanford/Decanter colors are not defined here */
-.su-button {
-  padding: 12px 30px; }
-  .su-button:hover, .su-button:focus {
-    text-decoration: none;
-    cursor: pointer; }
-  .su-button.soe-button--turquoise {
-    padding: 1rem 2rem 1.15rem;
-    background-color: #b1040e;
-    color: #ffffff;
-    color: #2e2d29;
-    padding: 12px 40px 18px 40px;
-    -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-            box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-    background-color: #00ece9; }
-    .su-button.soe-button--turquoise:hover, .su-button.soe-button--turquoise:focus {
-      background-color: #2e2d29;
-      color: #ffffff; }
-    .su-button.soe-button--turquoise:focus {
-      -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
-              box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
-    .su-button.soe-button--turquoise:hover, .su-button.soe-button--turquoise:focus {
-      cursor: pointer;
-      text-decoration: none; }
-  .su-button.soe-button--pink {
-    padding: 1rem 2rem 1.15rem;
-    background-color: #b1040e;
-    color: #ffffff;
-    color: #2e2d29;
-    padding: 12px 40px 18px 40px;
-    -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-            box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-    background-color: #ff525c; }
-    .su-button.soe-button--pink:hover, .su-button.soe-button--pink:focus {
-      background-color: #2e2d29;
-      color: #ffffff; }
-    .su-button.soe-button--pink:focus {
-      -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
-              box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
-    .su-button.soe-button--pink:hover, .su-button.soe-button--pink:focus {
-      cursor: pointer;
-      text-decoration: none; }
-  .su-button.soe-button--orange {
-    padding: 1rem 2rem 1.15rem;
-    background-color: #b1040e;
-    color: #ffffff;
-    color: #2e2d29;
-    padding: 12px 40px 18px 40px;
-    -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-            box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
-    background-color: #ffbd54; }
-    .su-button.soe-button--orange:hover, .su-button.soe-button--orange:focus {
-      background-color: #2e2d29;
-      color: #ffffff; }
-    .su-button.soe-button--orange:focus {
-      -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
-              box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
-    .su-button.soe-button--orange:hover, .su-button.soe-button--orange:focus {
-      cursor: pointer;
-      text-decoration: none; }
+.su-button:hover, .su-button:focus {
+  text-decoration: none;
+  cursor: pointer; }
+
+.su-button.soe-button--turquoise {
+  padding: 1rem 2rem 1.15rem;
+  background-color: #b1040e;
+  color: #ffffff;
+  color: #2e2d29;
+  padding: 12px 40px 18px 40px;
+  -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+          box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+  background-color: #00ece9; }
+  .su-button.soe-button--turquoise:hover, .su-button.soe-button--turquoise:focus {
+    background-color: #2e2d29;
+    color: #ffffff; }
+  .su-button.soe-button--turquoise:focus {
+    -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
+            box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
+  .su-button.soe-button--turquoise:hover, .su-button.soe-button--turquoise:focus {
+    cursor: pointer;
+    text-decoration: none; }
+
+.su-button.soe-button--pink {
+  padding: 1rem 2rem 1.15rem;
+  background-color: #b1040e;
+  color: #ffffff;
+  color: #2e2d29;
+  padding: 12px 40px 18px 40px;
+  -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+          box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+  background-color: #ff525c; }
+  .su-button.soe-button--pink:hover, .su-button.soe-button--pink:focus {
+    background-color: #2e2d29;
+    color: #ffffff; }
+  .su-button.soe-button--pink:focus {
+    -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
+            box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
+  .su-button.soe-button--pink:hover, .su-button.soe-button--pink:focus {
+    cursor: pointer;
+    text-decoration: none; }
+
+.su-button.soe-button--orange {
+  padding: 1rem 2rem 1.15rem;
+  background-color: #b1040e;
+  color: #ffffff;
+  color: #2e2d29;
+  padding: 12px 40px 18px 40px;
+  -webkit-box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+          box-shadow: 0 3px 6px rgba(46, 45, 41, 0.1);
+  background-color: #ffbd54; }
+  .su-button.soe-button--orange:hover, .su-button.soe-button--orange:focus {
+    background-color: #2e2d29;
+    color: #ffffff; }
+  .su-button.soe-button--orange:focus {
+    -webkit-box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53;
+            box-shadow: 0 0 3px #4d4f53, 0 0 7px #4d4f53; }
+  .su-button.soe-button--orange:hover, .su-button.soe-button--orange:focus {
+    cursor: pointer;
+    text-decoration: none; }
 
 .su-card .su-button {
   padding: 1rem 2rem 1.15rem;
