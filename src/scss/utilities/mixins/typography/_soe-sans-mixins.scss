@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-$soe-font--sans: Source Sans Pro;
+$soe-font--sans: Source Sans Pro; // waiting for Kerri to provide fall-back fonts
 
 @mixin soe-sans {
   font-family: $soe-font--sans;
 }
 
 
-// Note that main difference with basic styles is font-weight
+// Note that the main difference with basic styles is font family & font-weight
 @mixin soe-type-sans-base {
   font-family: $soe-font--sans; // should already be, but we can make sure
   font-weight: 900;

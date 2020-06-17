@@ -18,11 +18,15 @@
   background: linear-gradient(89.49deg, rgba($su-color-bright-purple, 0.9) 0.24%, rgba($su-color-bright-palo-alto, 0.8) 102.73%);
 }
 
+@mixin gradient--transparent-blue-purple {
+  background: linear-gradient(89.78deg, rgba($su-color-bay-blue, 0.9) 0.12%, rgba($su-color-bright-purple, 0.8) 99.89%);
+}
+
 @mixin gradient--transparent-purple-red {
   background: linear-gradient(270.22deg, $su-color-bright-purple 0.12%, rgba($su-color-bright-red, 0.8) 99.89%);
   transform: rotate(-180deg);
 }
 
 @mixin gradient--transparent-blue-green {
-  background: linear-gradient(270.22deg, rgba($su-color-bay, 0.9) 0.12%, rgba($su-color-bright-palo-alto, 0.8) 99.89%);
+  background: linear-gradient(270.22deg, rgba($su-color-bay-blue, 0.9) 0.12%, rgba($su-color-bright-palo-alto, 0.8) 99.89%);
 }
