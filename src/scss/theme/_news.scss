@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+.su-news-list {
+
+  .su-news-list__item {
+
+    h2 {
+      font-weight: $su-font-black;
+    }
+
+    a {
+      color: $su-color-black;
+      border-bottom: 2px solid $soe-color-turquoise;
+
+      &:after {
+        background-color: $su-color-black;
+      }
+    }
+  }
+
+  .su-news-list__topics {
+
+    a {
+      color: $su-color-bright-blue;
+    }
+  }
+
+}

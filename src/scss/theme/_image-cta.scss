@@ -1,118 +1,111 @@
 @charset 'UTF-8';
 
-.react-paragraphs-row.container-3-items,
-.react-paragraphs-row.container-2-items,
-.react-paragraphs-row.container-1-items {
+// Color set up for the alternating.
+.react-paragraphs {
 
-  // Image hover animation.
-  .su-image-cta-paragraph__image {
-    .field-media-image {
-      transition: all 1.0s ease;
-      transform: scale(1);
+  .react-paragraphs-row.container-3-items,
+  .react-paragraphs-row.container-2-items,
+  .react-paragraphs-row.container-1-items {
+
+    // Image hover animation
+    .su-image-cta-paragraph__image {
+      .field-media-image {
+        transition: all 1.0s ease;
+        transform: scale(1);
+      }
     }
-  }
 
-  > div:first-of-type {
-    > div {
-      .su-image-cta-paragraph {
-        background-color: $soe-color-turquoise;
-        cursor: pointer;
+    // Shared between all image-ctas.
+    > .ptype-stanford-image-cta {
+      > div {
+        .su-image-cta-paragraph {
+          cursor: pointer;
 
-        &:hover {
-          background-color: $su-color-black;
+          &:hover {
+            background-color: $su-color-black;
 
-          .su-image-cta-paragraph__image {
-            overflow: hidden;
+            .su-image-cta-paragraph__image {
+              overflow: hidden;
 
-            .field-media-image {
-              transform: scale(1.05);
+              .field-media-image {
+                transform: scale(1.03);
+              }
             }
-          }
 
-          a {
-            color: $su-color-white;
-          }
+            a {
+              color: $su-color-white;
+            }
 
-          .su-image-cta-paragraph__link {
-            color: $su-color-white;
-          }
+            .su-image-cta-paragraph__link {
+              color: $su-color-white;
+            }
 
-          .su-image-cta-paragraph__link::after {
-            background-color: $su-color-white;
+            .su-image-cta-paragraph__link::after {
+              background-color: $su-color-white;
+            }
           }
         }
       }
     }
   }
 
-  > div:nth-of-type(2) {
-    > div {
-      .su-image-cta-paragraph {
-        background-color: $soe-color-pink;
-        cursor: pointer;
+  // Set up for the rows where the color pattern alternates.
+  > div:nth-child(odd) {
+    > div:first-of-type {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-turquoise;
+        }
+      }
+    }
 
-        &:hover {
-          background-color: $su-color-black;
+    > div:nth-of-type(2) {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-pink;
+        }
+      }
+    }
 
-          .su-image-cta-paragraph__image {
-            overflow: hidden;
-
-            .field-media-image {
-              transform: scale(1.05);
-            }
-          }
-
-          a {
-            color: $su-color-white;
-          }
-
-          .su-image-cta-paragraph__link {
-            color: $su-color-white;
-          }
-
-          .su-image-cta-paragraph__link::after {
-            background-color: $su-color-white;
-          }
+    > div:nth-of-type(3) {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-orange;
         }
       }
     }
   }
 
-  > div:nth-of-type(3) {
-    > div {
-      .su-image-cta-paragraph {
-        background-color: $soe-color-orange;
-        cursor: pointer;
-
-        &:hover {
-          background-color: $su-color-black;
-
-          .su-image-cta-paragraph__image {
-            overflow: hidden;
-
-            .field-media-image {
-              transform: scale(1.05);
-            }
-          }
-
-          a {
-            color: $su-color-white;
-          }
-
-          .su-image-cta-paragraph__link {
-            color: $su-color-white;
-          }
-
-          .su-image-cta-paragraph__link::after {
-            background-color: $su-color-white;
-          }
+  > div:nth-child(even) {
+    > div:first-of-type {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-orange;
         }
-       }
+      }
+    }
+
+    > div:nth-of-type(2) {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-turquoise;
+        }
+      }
+    }
+
+    > div:nth-of-type(3) {
+      > div {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-pink;
+        }
+      }
     }
   }
+  // End alternating color set up.
 }
 
 
+// Link hover colors.
 .su-image-cta-paragraph {
   overflow: hidden;
 
