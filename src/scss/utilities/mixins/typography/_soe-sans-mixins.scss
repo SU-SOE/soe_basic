@@ -17,21 +17,25 @@ $soe-font--sans: Source Sans Pro; // waiting for Kerri to provide fall-back font
 @mixin soe--type-5 {
   @include soe-type-sans-base;
   @include modular-typography(5);
+  font-weight: $su-font-black;
 }
 
 @mixin soe--type-4 {
   @include soe-type-sans-base;
   @include modular-typography(4);
+  font-weight: $su-font-black;
 }
 
 @mixin soe--type-3 {
   @include soe-type-sans-base;
   @include modular-typography(3);
+  font-weight: $su-font-black;
 }
 
 @mixin soe--type-2 {
   @include soe-type-sans-base;
   @include modular-typography(2);
+  font-weight: $su-font-black;
 }
 
 @mixin soe--type-1 {
