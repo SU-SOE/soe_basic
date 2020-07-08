@@ -3,7 +3,7 @@
 // Color set up for the alternating.
 .react-paragraphs {
 
-    // Image hover animation
+  // Image hover animation
   .su-image-cta-paragraph__image {
     .field-media-image {
       transition: transform 1s ease;
@@ -12,7 +12,7 @@
   }
 
   // Shared between all image-ctas.
-  > .ptype-stanford-image-cta {
+  .ptype-stanford-image-cta {
     .su-image-cta-paragraph {
       cursor: pointer;
 
