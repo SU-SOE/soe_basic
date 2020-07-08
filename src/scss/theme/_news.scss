@@ -14,7 +14,7 @@
         color: $su-color-black;
         border-bottom: 2px solid $soe-color-turquoise;
 
-        &:after {
+        &::after {
           background-color: $su-color-black;
         }
       }
