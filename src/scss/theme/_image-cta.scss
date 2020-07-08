@@ -17,8 +17,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: $su-color-black;
-
+        // Image transform on hover.
         .su-image-cta-paragraph__image {
           overflow: hidden;
 
@@ -27,6 +26,7 @@
           }
         }
 
+        // Text and arrow changes to white.
         a {
           color: $su-color-white;
         }
@@ -39,16 +39,26 @@
           background-color: $su-color-white;
         }
       }
+
+      .su-image-cta-paragraph__link {
+        &::after {
+          background-color: $su-color-black;
+        }
+      }
     }
   }
 
 
-  // Set up for the rows where the color pattern alternates.
+  // Set up for the rows where the color pattern alternates. Also sets the black hover color on the text link.
   > div:nth-child(odd) {
     > div:first-of-type {
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-turquoise;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
@@ -57,6 +67,10 @@
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-pink;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
@@ -65,6 +79,10 @@
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-orange;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
@@ -75,6 +93,10 @@
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-orange;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
@@ -83,6 +105,10 @@
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-turquoise;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
@@ -91,6 +117,10 @@
       > div {
         .su-image-cta-paragraph {
           background-color: $soe-color-pink;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
         }
       }
     }
