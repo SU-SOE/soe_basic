@@ -17,32 +17,30 @@
 
     // Shared between all image-ctas.
     > .ptype-stanford-image-cta {
-      > div {
-        .su-image-cta-paragraph {
-          cursor: pointer;
+      .su-image-cta-paragraph {
+        cursor: pointer;
 
-          &:hover {
-            background-color: $su-color-black;
+        &:hover {
+          background-color: $su-color-black;
 
-            .su-image-cta-paragraph__image {
-              overflow: hidden;
+          .su-image-cta-paragraph__image {
+            overflow: hidden;
 
-              .field-media-image {
-                transform: scale(1.02);
-              }
+            .field-media-image {
+              transform: scale(1.02);
             }
+          }
 
-            a {
-              color: $su-color-white;
-            }
+          a {
+            color: $su-color-white;
+          }
 
-            .su-image-cta-paragraph__link {
-              color: $su-color-white;
-            }
+          .su-image-cta-paragraph__link {
+            color: $su-color-white;
+          }
 
-            .su-image-cta-paragraph__link::after {
-              background-color: $su-color-white;
-            }
+          .su-image-cta-paragraph__link::after {
+            background-color: $su-color-white;
           }
         }
       }
