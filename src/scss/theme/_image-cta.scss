@@ -3,49 +3,45 @@
 // Color set up for the alternating.
 .react-paragraphs {
 
-  .container-3-items,
-  .container-2-items,
-  .container-1-items {
-
     // Image hover animation
-    .su-image-cta-paragraph__image {
-      .field-media-image {
-        transition: transform 1s ease;
-        transform: scale(1);
-      }
+  .su-image-cta-paragraph__image {
+    .field-media-image {
+      transition: transform 1s ease;
+      transform: scale(1);
     }
+  }
 
-    // Shared between all image-ctas.
-    > .ptype-stanford-image-cta {
-      .su-image-cta-paragraph {
-        cursor: pointer;
+  // Shared between all image-ctas.
+  > .ptype-stanford-image-cta {
+    .su-image-cta-paragraph {
+      cursor: pointer;
 
-        &:hover {
-          background-color: $su-color-black;
+      &:hover {
+        background-color: $su-color-black;
 
-          .su-image-cta-paragraph__image {
-            overflow: hidden;
+        .su-image-cta-paragraph__image {
+          overflow: hidden;
 
-            .field-media-image {
-              transform: scale(1.02);
-            }
+          .field-media-image {
+            transform: scale(1.02);
           }
+        }
 
-          a {
-            color: $su-color-white;
-          }
+        a {
+          color: $su-color-white;
+        }
 
-          .su-image-cta-paragraph__link {
-            color: $su-color-white;
-          }
+        .su-image-cta-paragraph__link {
+          color: $su-color-white;
+        }
 
-          .su-image-cta-paragraph__link::after {
-            background-color: $su-color-white;
-          }
+        .su-image-cta-paragraph__link::after {
+          background-color: $su-color-white;
         }
       }
     }
   }
+
 
   // Set up for the rows where the color pattern alternates.
   > div:nth-child(odd) {
