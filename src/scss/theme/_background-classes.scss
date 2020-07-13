@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* set up background classes to be used in various contexts */
+@import '../utilities/index';
+
+.soe-bg--pink {
+  background-color: $soe-color-pink;
+}
+
+.soe-bg-turquoise {
+  background-color: $soe-color-turquoise;
+}
+
+.soe-bg-orange {
+  background-color: $soe-color-orange;
+}
+
+// gradients, using utilities/mixins/gradients.scss
+
+// solid gradients
+.soe-gradient--solid-purple-lagunita {
+  @include gradient--solid-purple-lagunita;
+}
+
+.soe-gradient--solid-purple-green {
+  @include gradient--solid-purple-green;
+}
+
+// transparent gradients
+.soe-gradient--transparent-purple-lagunita {
+  @include gradient--transparent-purple-lagunita;
+}
+
+.soe-gradient--transparent-purple-green {
+  @include gradient--transparent-purple-green;
+}
+
+.soe-gradient--transparent-blue-purple {
+  @include gradient--transparent-blue-purple;
+}
+
+.soe-gradient--transparent-purple-red {
+  @include gradient--transparent-purple-red;
+}
+
+.soe-gradient--transparent-blue-green {
+  @include gradient--transparent-blue-green;
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import '../utilities/index';
+// override decanter button styles here to use new colors and any other differences
+
+// default button style for this theme is still main red su-button
+.su-button {
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &.soe-button--turquoise {
+    @include soe-button--turquoise;
+  }
+
+  &.soe-button--pink {
+    @include soe-button--pink;
+  }
+
+  &.soe-button--orange {
+    @include soe-button--orange;
+  }
+
+}
+
+.su-card {
+  .su-button {
+    @include soe-button--turquoise;
+  }
+}
+
+
+
+
