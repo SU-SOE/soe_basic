@@ -69,19 +69,17 @@
     }
   }
 
-  .event_list_item__type {
-    a,
-    a:link,
-    a:visited {
-      color: $su-color-black;
-      font-weight: $su-font-regular;
-      text-decoration: none;
-    }
+  a,
+  a:link,
+  a:visited {
+    color: $su-color-black;
+    font-weight: $su-font-regular;
+    text-decoration: none;
+  }
 
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
+  a {
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
