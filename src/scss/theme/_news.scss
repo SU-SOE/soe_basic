@@ -1,9 +1,8 @@
 @charset 'UTF-8';
 
+// News List
 .stanford-news--list {
-
   .su-news-list {
-
     .su-news-list__item {
 
       h2 {
@@ -22,11 +21,9 @@
 
     .su-news-list__item__date {
       @include modular-spacing('margin', null null 1 null);
-
     }
 
     .su-news-list__topics {
-
       a {
         color: $su-color-bright-blue;
         text-decoration: underline;
@@ -36,9 +33,7 @@
 
   // Load more button.
   .js-pager__items {
-
     .pager__item {
-
       .button {
         background-color: $soe-color-turquoise;
         color: $su-color-black;
