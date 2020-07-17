@@ -10,12 +10,18 @@
       }
 
       a {
+        @include soe--link;
+
         color: $su-color-black;
-        border-bottom: 2px solid $soe-color-turquoise;
+
+        &:hover {
+          @include soe--link-hover;
+        }
 
         &::after {
           background-color: $su-color-black;
         }
+
       }
     }
 
@@ -36,9 +42,37 @@
     .pager__item {
       .button {
         background-color: $soe-color-turquoise;
-        color: $su-color-black;
+        color: $soe-color-black;
+
+        &:hover {
+          background-color: $su-color-black;
+          color: $su-color-white;
+        }
       }
     }
   }
 }
 
+.stanford-news-vertical-teaser-term {
+  .su-news-vertical-teaser {
+    &.su-card {
+      .su-link {
+        font-weight: $su-font-bold;
+      }
+    }
+  }
+
+  .stanford-news--cards {
+    > .more-link {
+      a {
+        background-color: $soe-color-turquoise;
+        color: $soe-color-black;
+
+        &:hover {
+          background-color: $su-color-black;
+          color: $su-color-white;
+        }
+      }
+    }
+  }
+}

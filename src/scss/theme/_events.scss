@@ -153,12 +153,6 @@
 }
 
 // Event List pages
-.section-events-list--content {
-  .main-region {
-    @include modular-spacing('padding', 2 null null null);
-  }
-}
-
 .stanford-events-list-page,
 .stanford-events-list-page-filtered,
 .su-event-series-items,
@@ -209,6 +203,11 @@
     .pager__item {
       .button {
         background-color: $soe-color-turquoise;
+        color: $soe-color-black;
+
+        &:hover {
+          color: $su-color-white;
+        }
       }
     }
   }
@@ -225,5 +224,13 @@
     @include modular-spacing('padding', 6 null null null);
 
     margin-top: 0;
+  }
+}
+
+.section-bgcolor--title {
+  @include modular-spacing('padding', 6 null 6 null);
+
+  h1 {
+    margin: 0;
   }
 }
