@@ -66,3 +66,10 @@
     padding: $su-gutter-xs;
   }
 }
+
+.section-people {
+  .section-bgcolor--title {
+    @include gradient--solid-purple-green;
+    @include modular-spacing('margin', null null 5 null);
+  }
+}

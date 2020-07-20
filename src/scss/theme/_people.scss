@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+// People List
+div[class^='stanford-people-grid'] {
+
+  .views-col {
+    overflow: scroll;
+  }
+
+  // Load more button.
+  .js-pager__items {
+    .pager__item {
+      .button {
+        background-color: $soe-color-turquoise;
+        color: $soe-color-black;
+
+        &:hover {
+          background-color: $su-color-black;
+          color: $su-color-white;
+        }
+      }
+    }
+  }
+}
