@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-// solid gradients
+// Solid gradients
 @mixin gradient--solid-purple-lagunita {
   background: linear-gradient(91.01deg, $su-color-purple 3.46%, $su-color-lagunita 95.48%);
 }
@@ -13,7 +13,7 @@
   background: linear-gradient(180deg, $su-color-fog 0%, rgba(244, 244, 244, 0) 100%);
 }
 
-// transparent gradients
+// Transparent gradients
 @mixin gradient--transparent-purple-lagunita {
   background: linear-gradient(91.01deg, rgba($su-color-bright-purple, 0.9) 3.47%, rgba($su-color-lagunita, 0.8) 95.48%);
 }

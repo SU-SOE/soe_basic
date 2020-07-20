@@ -13,31 +13,36 @@ $soe-font--sans: Source Sans Pro; // waiting for Kerri to provide fall-back font
   font-weight: 900;
 }
 
-// SOE Type 5 maps to su-type-a, SOE Type 4 to b, etc.
+// SOE Type 5 maps to su-type-a, SOE Type 4 to b, etc. Not working as expected.
+// SOE Type 5 maps to su-type-a
 @mixin soe--type-5 {
   @include soe-type-sans-base;
   @include modular-typography(5);
   font-weight: $su-font-black;
 }
 
+// SOE Type 4 maps to su-type-b
 @mixin soe--type-4 {
   @include soe-type-sans-base;
   @include modular-typography(4);
   font-weight: $su-font-black;
 }
 
+// SOE Type 3 maps to su-type-c
 @mixin soe--type-3 {
   @include soe-type-sans-base;
   @include modular-typography(3);
   font-weight: $su-font-black;
 }
 
+// SOE Type 2 maps to su-type-d
 @mixin soe--type-2 {
   @include soe-type-sans-base;
   @include modular-typography(2);
   font-weight: $su-font-black;
 }
 
+// SOE Type 1 maps to su-type-e
 @mixin soe--type-1 {
   @include soe-type-sans-base;
   @include modular-typography(1);
