@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-// People List
+// Person List
 div[class^='stanford-people-grid'] {
 
   .views-col {
@@ -20,5 +20,49 @@ div[class^='stanford-people-grid'] {
         }
       }
     }
+  }
+}
+
+// Person Node.
+.content {
+  .su-person-content {
+
+    .su-link, a {
+      color: $soe-color-orange;
+    }
+
+    .layout--section-person-header {
+      color: $su-color-white;
+    }
+
+    .su-person-affiliations {
+      a {
+        background-color: $soe-color-pink;
+      }
+    }
+
+    .su-person-links {
+      a {
+        &:after {
+          background-color: $su-color-black;
+        }
+      }
+    }
+
+    .su-person-profile-link {
+      text-align: center;
+
+      a {
+        background-color: $soe-color-turquoise;
+        color: $su-color-black;
+
+        &:hover {
+          background-color: $su-color-black;
+          color: $su-color-white;
+        }
+
+      }
+    }
+
   }
 }
