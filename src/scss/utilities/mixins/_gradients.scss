@@ -14,11 +14,11 @@
 }
 
 @mixin gradient--solid-teal {
-  background: linear-gradient(180deg, rgba(0,236,233, 0.5) 0%, transparent 97.81%);
+  background: linear-gradient(180deg, rgba(0, 236, 233, 0.5) 0%, transparent 97.81%);
 }
 
 @mixin gradient--solid-dark-grey {
-  background: linear-gradient(1.26deg, #4D4F53 11.05%, rgba(0, 0, 0, 0.4) 97.9%);
+  background: linear-gradient(1.26deg, #4d4f53 11.05%, rgba(0, 0, 0, 0.4) 97.9%);
 }
 
 // Transparent gradients

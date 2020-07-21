@@ -27,7 +27,8 @@ div[class^='stanford-people-grid'] {
 .content {
   .su-person-content {
 
-    .su-link, a {
+    .su-link,
+    a {
       color: $soe-color-orange;
     }
 
@@ -43,7 +44,7 @@ div[class^='stanford-people-grid'] {
 
     .su-person-links {
       a {
-        &:after {
+        &::after {
           background-color: $su-color-black;
         }
       }

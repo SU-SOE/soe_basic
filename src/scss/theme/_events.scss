@@ -153,6 +153,12 @@
 }
 
 // Event List pages
+.section-events-list--content {
+  .main-region {
+    @include modular-spacing('padding', 2 null null null);
+  }
+}
+
 .stanford-events-list-page,
 .stanford-events-list-page-filtered,
 .su-event-series-items,
