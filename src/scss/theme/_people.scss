@@ -24,7 +24,28 @@ div[class^='stanford-people-grid'] {
 }
 
 // Person Node.
+.layout--section-person-header {
+  &.centered-container {
+    @include modular-spacing('padding', 8 null 5 6);
+
+    color: $su-color-white;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .content {
+  .right-region {
+    .node-stanford-person-su-person-telephone,
+    .node-stanford-person-su-person-location-name,
+    .node-stanford-person-su-person-links {
+      .block__title:before {
+        color: $su-color-white;
+      }
+    }
+  }
+
   .su-person-content {
 
     .su-link,
@@ -45,7 +66,7 @@ div[class^='stanford-people-grid'] {
     .su-person-links {
       a {
         &::after {
-          background-color: $su-color-black;
+          background-color: $su-color-white;
         }
       }
     }
