@@ -32,6 +32,21 @@ div[class^='stanford-people-grid'] {
     max-width: 100%;
     margin: 0;
     width: 100%;
+
+    @include grid-media-max('sm') {
+      .su-quote__media {
+        &.flex-2-of-12 {
+          .field-media-image {
+            margin: unset;
+          }
+        }
+      }
+    }
+
+    .node-stanford-person-su-person-short-title {
+      display: none;
+      margin-top: 0;
+    }
   }
 }
 
@@ -40,8 +55,10 @@ div[class^='stanford-people-grid'] {
     .node-stanford-person-su-person-telephone,
     .node-stanford-person-su-person-location-name,
     .node-stanford-person-su-person-links {
-      .block__title:before {
-        color: $su-color-white;
+      .block__title {
+        &::before {
+          color: $su-color-white;
+        }
       }
     }
   }
