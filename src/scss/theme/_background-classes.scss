@@ -45,10 +45,12 @@
 }
 
 // Background gradients as replacement for the author selected gradients over images. Also has the title colors.
-.section-editorial-content,
+.section-bgcolor--title,
 .section-event-list--title,
+.section-editorial-content,
 .section-event-series--header {
   @include gradient--solid-purple-lagunita;
+  @include modular-spacing('margin', null null 5 null);
 
   h1,
   h2,
@@ -64,3 +66,18 @@
     padding: $su-gutter-xs;
   }
 }
+
+// People has different colors
+.section-people {
+  .section-bgcolor--title {
+    @include gradient--solid-purple-green;
+    @include modular-spacing('margin', null null 5 null);
+  }
+}
+
+.person {
+  @include gradient--solid-teal;
+
+  color: $su-color-white;
+}
+

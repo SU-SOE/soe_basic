@@ -13,6 +13,14 @@
   background: linear-gradient(180deg, $su-color-fog 0%, rgba(244, 244, 244, 0) 100%);
 }
 
+@mixin gradient--solid-teal {
+  background: linear-gradient(180deg, #175f5f 0%, #4d5054 32.56%);
+}
+
+@mixin gradient--solid-dark-grey {
+  background: linear-gradient(1.26deg, #4d4f53 11.05%, rgba(0, 0, 0, 0.4) 97.9%);
+}
+
 // Transparent gradients
 @mixin gradient--transparent-purple-lagunita {
   background: linear-gradient(91.01deg, rgba($su-color-bright-purple, 0.9) 3.47%, rgba($su-color-lagunita, 0.8) 95.48%);
