@@ -71,13 +71,22 @@
           margin: 0;
           animation: none;
 
+          &:hover,
+          &:focus {
+            @include soe--link-hover;
+
+            &::after {
+              transform: none;
+            }
+          }
+
           &::after {
+            transform: none;
             background: url("#{$soe-image-path}/soe_arrow.svg") no-repeat 0 0;
             background-size: 100%;
             height: 1.8rem;
             width: 1.8rem;
             -webkit-mask: none;
-            transition: none;
           }
         }
       }
