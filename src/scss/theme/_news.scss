@@ -55,39 +55,37 @@
 
 .stanford-news-vertical-teaser-term {
   .su-news-vertical-teaser {
-    &.su-card {
-      .su-news-vertical-teaser__link {
-        text-decoration: none;
-      }
+    .su-news-vertical-teaser__link {
+      text-decoration: none;
+    }
 
-      .su-news-header {
-        @include modular-spacing('margin', null 2 2 2);
+    .su-news-header {
+      @include modular-spacing('margin', null 2 2 2);
 
-        .su-link {
-          @include soe--link;
+      .su-link {
+        @include soe--link;
 
-          display: inline;
-          font-weight: $su-font-bold;
-          margin: 0;
-          animation: none;
+        display: inline;
+        font-weight: $su-font-bold;
+        margin: 0;
+        animation: none;
 
-          &:hover,
-          &:focus {
-            @include soe--link-hover;
-
-            &::after {
-              transform: none;
-            }
-          }
+        &:hover,
+        &:focus {
+          @include soe--link-hover;
 
           &::after {
             transform: none;
-            background: url("#{$soe-image-path}/soe_arrow.svg") no-repeat 0 0;
-            background-size: 100%;
-            height: 1.8rem;
-            width: 1.8rem;
-            -webkit-mask: none;
           }
+        }
+
+        &::after {
+          transform: none;
+          background: url("#{$soe-image-path}/soe_arrow.svg") no-repeat 0 0;
+          background-size: 100%;
+          height: 1.8rem;
+          width: 1.8rem;
+          -webkit-mask: none;
         }
       }
     }
@@ -102,6 +100,18 @@
         &:hover {
           background-color: $su-color-black;
           color: $su-color-white;
+        }
+      }
+    }
+  }
+
+  .su-news-vertical-teaser {
+    &.su-card {
+      .su-news-vertical-teaser__link {
+        &:hover {
+          h2 {
+            text-decoration: none;
+          }
         }
       }
     }
