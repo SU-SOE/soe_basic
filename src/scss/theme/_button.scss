@@ -6,7 +6,7 @@
 
   &:hover,
   &:focus {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
   }
 
@@ -26,9 +26,13 @@
 .su-card {
   .su-button {
     @include soe-button--turquoise;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
-
 
 
 

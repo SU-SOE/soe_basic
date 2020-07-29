@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 .su-hero {
+
   .su-hero__card {
     background: transparent;
     border: 0;
@@ -14,14 +15,12 @@
 
     @include grid-media-max('sm') {
       text-align: left;
+      width: unset;
     }
+
 
     .su-card__contents {
       color: $su-color-white;
-
-      @include grid-media-max('sm') {
-        color: $su-color-black;
-      }
 
       span {
         @include soe--type-1;
@@ -40,6 +39,11 @@
       .su-card__button {
         .su-button {
           @include soe-button--orange;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
         }
       }
     }
