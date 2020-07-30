@@ -29,3 +29,10 @@ $su-color-bay-blue: #016895;
     background-color: $su-color-bright-red;
   }
 }
+
+// Links have hover underline by default.
+.su-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
