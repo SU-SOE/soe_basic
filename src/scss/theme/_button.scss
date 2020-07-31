@@ -27,6 +27,8 @@
   .su-button {
     @include soe-button--turquoise;
 
+    color: $soe-color-black;
+
     &:hover,
     &:focus {
       text-decoration: underline;

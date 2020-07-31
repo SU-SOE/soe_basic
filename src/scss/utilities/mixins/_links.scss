@@ -20,3 +20,19 @@ $su-color-bay-blue: #016895;
 @mixin soe--link-hover {
   border-bottom: 3px solid $su-color-black;
 }
+
+// SU link-action should be red
+.su-link--action {
+  color: $su-color-bright-red;
+
+  &::after {
+    background-color: $su-color-bright-red;
+  }
+}
+
+// Links have hover underline by default.
+.su-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
