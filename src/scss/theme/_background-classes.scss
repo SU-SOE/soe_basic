@@ -48,13 +48,17 @@
 .section-bgcolor--title,
 .section-event-list--title,
 .section-editorial-content,
+.section-event-series--header,
 .section-event-series--header {
   @include gradient--solid-purple-lagunita;
   @include modular-spacing('margin', null null 5 null);
 
   h1,
   h2,
-  .su-event-series-dek {
+  a,
+  .su-event-series-dek,
+  .su-event-dek,
+  .su-event-sponsor {
     color: $su-color-white;
   }
 
