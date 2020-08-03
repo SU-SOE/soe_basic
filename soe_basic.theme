@@ -11,3 +11,12 @@
 function soe_basic_preprocess_html(&$variables) {
   $variables['stanford_basic_path'] = drupal_get_path('theme', 'stanford_basic');
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+
+function soe_basic_preprocess_pattern_localfooter(&$variables){
+  $variables['lockup_title'] = 'Engineering';
+  $variables['link'] = 'http://engineering.stanford.edu';
+}
