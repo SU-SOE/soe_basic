@@ -28,7 +28,14 @@
   .centered-container {
     .cta {
       .su-button {
-        background-color: $soe-color-pink;
+        @include soe-button--pink;
+
+        color: $soe-color-black;
+
+        &:hover,
+        &:focus {
+          color: $su-color-white;
+        }
       }
     }
   }
@@ -72,7 +79,7 @@
   a,
   a:link,
   a:visited {
-    color: $su-color-black;
+    color: $soe-color-black;
     font-weight: $su-font-regular;
     text-decoration: none;
   }

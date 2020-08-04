@@ -25,6 +25,7 @@
 .su-card {
   .su-button {
     @include soe-button--turquoise;
+    color: $soe-color-black;
   }
 }
 
