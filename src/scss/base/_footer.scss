@@ -3,7 +3,7 @@
   .su-local-footer__header {
 
     .su-med-logo {
-      @include grid-media-between('lg','2xl') {
+      @include grid-media-between('lg', '2xl') {
         @include modular-spacing('padding', 4 null null null);
       }
     }
