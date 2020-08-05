@@ -3,7 +3,9 @@
   .su-local-footer__header {
 
     .su-med-logo {
-      padding: 75px 0 0;
+      @include grid-media-between('lg','2xl') {
+        @include modular-spacing('padding', 4 null null null);
+      }
     }
   }
 }
