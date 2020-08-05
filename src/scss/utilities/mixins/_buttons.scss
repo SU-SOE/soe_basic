@@ -2,14 +2,13 @@
 
 @mixin soe-button-common {
   @include button-primary;
-  color: $su-color-black;
+  color: $soe-color-black;
   padding: 12px 40px 18px 40px;
   box-shadow: 0 3px 6px rgba($su-color-black, 0.1);
 
   &:hover,
   &:focus {
     cursor: pointer;
-    text-decoration: none;
   }
 }
 
