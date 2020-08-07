@@ -17,8 +17,8 @@ function soe_basic_preprocess_html(&$variables) {
  */
 
 function soe_basic_preprocess_pattern_localfooter(&$variables){
-  $variables['lockup_title'] = 'ENGINEERING';
+  $variables['lockup_title'] = t('ENGINEERING');
   $variables['link'] = 'http://engineering.stanford.edu';
   $variables['show_su_med_logo'] = theme_get_setting('show_su_med_logo');
-  $variables['theme_path'] = base_path() . $variables['directory'];
+  $variables['soe_basic_path'] = base_path() . drupal_get_path('theme', 'soe_basic');
 }
