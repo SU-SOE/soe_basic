@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-@import '../utilities/index';
-// override decanter button styles here to use new colors and any other differences
-
+// Overrides to the CTA list paragraph
 .su-cta-list-paragraph {
 
-  h2 {
-    font-weight: $su-font-black;
+  .su-cta-list-paragraph__header {
+    h2 {
+      font-weight: $su-font-black;
+      font-size: inherit;
+    }
   }
-
 }
