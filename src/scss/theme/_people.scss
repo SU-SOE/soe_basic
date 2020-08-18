@@ -4,7 +4,7 @@
 div[class^='stanford-people-grid'] {
 
   .views-col {
-    overflow: scroll;
+    word-wrap: break-word;
   }
 
   // Load more button.
