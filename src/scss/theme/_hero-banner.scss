@@ -1,6 +1,11 @@
 @charset 'UTF-8';
 
+.node-stanford-page-su-page-banner {
+  @include modular-spacing('margin', null null 7 null);
+}
+
 .su-hero {
+  align-items: center;
 
   .su-hero__card {
     background: transparent;
@@ -9,7 +14,6 @@
     left: auto;
     top: auto;
     text-align: center;
-    margin: 0 auto;
     max-width: unset;
     width: 75%;
 
