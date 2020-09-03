@@ -50,7 +50,7 @@
 .section-editorial-content,
 .section-event-series--header,
 .section-event-series--header {
-  @include gradient--solid-purple-lagunita;
+  @include gradient--solid-purple-green;
   @include modular-spacing('margin', null null 5 null);
 
   h1,
@@ -71,14 +71,7 @@
   }
 }
 
-// People has different colors
-.section-people {
-  .section-bgcolor--title {
-    @include gradient--solid-purple-green;
-    @include modular-spacing('margin', null null 5 null);
-  }
-}
-
+// Person node has a background color
 .person {
   @include gradient--solid-teal;
 
