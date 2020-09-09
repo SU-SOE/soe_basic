@@ -20,6 +20,16 @@ function soe_basic_preprocess_pattern_localfooter(&$variables){
   $med = theme_get_setting('show_su_med_logo');
   $soe_basic_path = base_path() . drupal_get_path('theme', 'soe_basic');
 
+  // Default to Engineering.
+  if (empty($variables['line1'])) {
+    $variables['custom_lockup'] = 1;
+    $variables['line1'] = t('Engineering');
+  }
+
+  if (empty($variables['link'])) {
+    $variables['link'] = "https://engineering.stanford.edu/";
+  }
+
   if ($med) {
     $variables['headercontent']['med_logo'] = [
       '#markup' => '
