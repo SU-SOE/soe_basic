@@ -23,11 +23,11 @@ function soe_basic_preprocess_pattern_localfooter(&$variables){
   // Default to Engineering.
   if (
     empty($variables['line1'])
-    && (isset($variables['custom_lockup']) && !$variables['custom_lockup'])
+    && (!isset($variables['custom_lockup']) || !$variables['custom_lockup'])
   ) {
     $variables['custom_lockup'] = 1;
     $variables['lockup_option'] = "su-lockup--option-a";
-    $variables['line1'] = t('Engineering');
+    $variables['line1'] = t('ENGINEERING');
     $variables['link'] = "https://engineering.stanford.edu/";
   }
 
