@@ -13,10 +13,6 @@
     }
   }
 
-  .su-lockup__line1 {
-    font-weight: $su-font-semi-bold;
-  }
-
   a {
     color: $su-color-bright-red;
 
@@ -46,6 +42,12 @@
       @include grid-media-between('lg', '2xl') {
         @include modular-spacing('padding', 4 null null null);
       }
+    }
+  }
+
+  .su-lockup--option-a {
+    .su-lockup__line1 {
+      font-weight: $su-font-semi-bold;
     }
   }
 }
