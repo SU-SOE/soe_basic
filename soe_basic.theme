@@ -21,7 +21,9 @@ function soe_basic_preprocess_pattern_localfooter(&$variables){
   $soe_basic_path = base_path() . drupal_get_path('theme', 'soe_basic');
 
   // Default to Engineering.
-  if (empty($variables['line1']) && !$variables['custom_lockup']) {
+  if (
+    empty($variables['line1'])
+    && (isset($variables['custom_lockup'] && !$variables['custom_lockup'])) {
     $variables['custom_lockup'] = 1;
     $variables['lockup_option'] = "su-lockup--option-a";
     $variables['line1'] = t('Engineering');
