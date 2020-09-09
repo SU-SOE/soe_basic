@@ -17,8 +17,18 @@ function soe_basic_preprocess_html(&$variables) {
  */
 
 function soe_basic_preprocess_pattern_localfooter(&$variables){
-  $variables['lockup_title'] = t('ENGINEERING');
-  $variables['link'] = 'http://engineering.stanford.edu';
-  $variables['show_su_med_logo'] = theme_get_setting('show_su_med_logo');
-  $variables['soe_basic_path'] = base_path() . drupal_get_path('theme', 'soe_basic');
+  $med = theme_get_setting('show_su_med_logo');
+  $soe_basic_path = base_path() . drupal_get_path('theme', 'soe_basic');
+
+  if ($med) {
+    $variables['headercontent']['med_logo'] = [
+      '#markup' => '
+      <div class="su-med-logo">
+        <a href="https://med.stanford.edu/">
+          <img src="' . $soe_basic_path . '/dist/assets/img/stanford_medicine.png" alt="Stanford Medicine home" />
+        </a>
+      </div>',
+    ];
+  }
+
 }
