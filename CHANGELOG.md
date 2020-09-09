@@ -1,5 +1,19 @@
 # SOE Basic Sub-Theme
 
+8.x-1.0
+--------------------------------------------------------------------------------
+_Release Date: 2020-09-09_
+
+- D8CORE-2454: Changes to block config name. (#29) (27850e7)
+- D8CORE-2490: Super Footer (#27) (b997fff)
+- D8CORE-2642: changing the bg gradient to all be the same as the people one. (#28) (a434f03)
+- Merge pull request #26 from SU-SOE/D8CORE-2539 (1123b9d)
+- D8CORE-2539: correcting dev versions of composer.json and info.yml (e67ae18)
+- D8CORE-2539: fixup! (7a98d83)
+- D8CORE-2539: removing the scroll (c4bc897)
+- Merge pull request #25 from SU-SOE/D8CORE-2510 (57020d6)
+- D8CORE-2510: fixing spacing on the hero banner for the gradient (64f8c83)
+
 8.1.0-alpha.3
 --------------------------------------------------------------------------------
 _Release Date: 2020-08-07_
