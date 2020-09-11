@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 // Color set up for the alternating.
-.react-paragraphs {
+.react-paragraphs-row {
 
   // Image hover animation
   .su-image-cta-paragraph__image {
@@ -47,12 +47,27 @@
       }
     }
   }
+}
 
+// Set up for the rows where the color pattern alternates. The row needs to be selected as odd or even.
+// Then each card is selected by position.
+// Also sets the black hover color on the text link.
+.su-page-components {
+  > div:nth-of-type(even) {
+    div {
+      &.ptype-stanford-image-cta:first-of-type {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-orange;
 
-  // Set up for the rows where the color pattern alternates. Also sets the black hover color on the text link.
-  > div:nth-child(odd) {
-    > div:first-of-type {
-      > div {
+          &:hover {
+            background-color: $su-color-black;
+          }
+        }
+      }
+    }
+
+    div {
+      .ptype-stanford-image-cta:nth-of-type(2) {
         .su-image-cta-paragraph {
           background-color: $soe-color-turquoise;
 
@@ -63,22 +78,10 @@
       }
     }
 
-    > div:nth-of-type(2) {
-      > div {
+    div {
+      &.ptype-stanford-image-cta:nth-of-type(3) {
         .su-image-cta-paragraph {
           background-color: $soe-color-pink;
-
-          &:hover {
-            background-color: $su-color-black;
-          }
-        }
-      }
-    }
-
-    > div:nth-of-type(3) {
-      > div {
-        .su-image-cta-paragraph {
-          background-color: $soe-color-orange;
 
           &:hover {
             background-color: $su-color-black;
@@ -88,21 +91,9 @@
     }
   }
 
-  > div:nth-child(even) {
-    > div:first-of-type {
-      > div {
-        .su-image-cta-paragraph {
-          background-color: $soe-color-orange;
-
-          &:hover {
-            background-color: $su-color-black;
-          }
-        }
-      }
-    }
-
-    > div:nth-of-type(2) {
-      > div {
+  > div:nth-of-type(odd) {
+    div {
+      &.ptype-stanford-image-cta:first-of-type {
         .su-image-cta-paragraph {
           background-color: $soe-color-turquoise;
 
@@ -113,10 +104,22 @@
       }
     }
 
-    > div:nth-of-type(3) {
-      > div {
+    div {
+      .ptype-stanford-image-cta:nth-of-type(2) {
         .su-image-cta-paragraph {
           background-color: $soe-color-pink;
+
+          &:hover {
+            background-color: $su-color-black;
+          }
+        }
+      }
+    }
+
+    div {
+      &.ptype-stanford-image-cta:nth-of-type(3) {
+        .su-image-cta-paragraph {
+          background-color: $soe-color-orange;
 
           &:hover {
             background-color: $su-color-black;
@@ -126,43 +129,41 @@
     }
   }
   // End alternating color set up.
-}
 
+  // Link hover colors.
+  .su-image-cta-paragraph {
+    overflow: hidden;
 
-// Link hover colors.
-.su-image-cta-paragraph {
-  overflow: hidden;
+    .su-image-cta-paragraph__link {
 
-  .su-image-cta-paragraph__link {
-
-    a {
-      color: $soe-color-black;
-      text-decoration: none;
-
-      &:hover {
+      a {
         color: $soe-color-black;
+        text-decoration: none;
+
+        &:hover {
+          color: $su-color-white;
+        }
+
+        &:focus {
+          color: $su-color-white;
+        }
       }
 
-      &:focus {
-        color: $soe-color-black;
-      }
-    }
-
-    &::after {
-      background-color: $su-color-black;
-
-      &:hover {
+      &::after {
         background-color: $su-color-black;
-      }
 
-      &:focus {
-        background-color: $su-color-black;
-      }
+        &:hover {
+          background-color: $su-color-white;
+        }
 
-      &:active {
-        background-color: $su-color-black;
+        &:focus {
+          background-color: $su-color-white;
+        }
+
+        &:active {
+          background-color: $su-color-white;
+        }
       }
     }
   }
-
 }
