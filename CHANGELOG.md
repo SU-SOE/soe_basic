@@ -2,8 +2,9 @@
 
 8.x-1.0
 --------------------------------------------------------------------------------
-_Release Date: 2020-09-09_
+_Release Date: 2020-09-11_
 
+- Updated the cta colors to use the new react rows (#31) (ee416ec)
 - D8CORE-2454: Changes to block config name. (#29) (27850e7)
 - D8CORE-2490: Super Footer (#27) (b997fff)
 - D8CORE-2642: changing the bg gradient to all be the same as the people one. (#28) (a434f03)
