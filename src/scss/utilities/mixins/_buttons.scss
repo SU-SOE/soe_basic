@@ -15,14 +15,17 @@
 @mixin soe-button--turquoise {
   @include soe-button-common;
   background-color: $soe-color-turquoise;
+  color: $soe-color-black;
 }
 
 @mixin soe-button--pink {
   @include soe-button-common;
   background-color: $soe-color-pink;
+  color: $soe-color-black;
 }
 
 @mixin soe-button--orange {
   @include soe-button-common;
   background-color: $soe-color-orange;
+  color: $soe-color-black;
 }
