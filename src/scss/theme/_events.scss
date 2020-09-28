@@ -215,6 +215,8 @@
   .js-pager__items {
     .pager__item {
       .button {
+        @include box-shadow('shallow');
+
         background-color: $soe-color-turquoise;
         color: $soe-color-black;
 
