@@ -36,5 +36,12 @@
   }
 }
 
+// Back to all events or news link.
+.more-link {
+  a {
+    @include box-shadow('shallow');
+  }
+}
+
 
 
