@@ -1,5 +1,13 @@
 # SOE Basic Sub-Theme
 
+8.x-1.2
+--------------------------------------------------------------------------------
+_Release Date: 2020-10-05_
+
+- D8CORE-2690: fixing colors for the person node page (#37) (ac58e31)
+- D8CORE-2618: adding underline for hover (#35) (abdac1e)
+- D8CORE-2653: drop shadow on load more button (#36) (e3af6f4)
+
 8.x-1.1
 --------------------------------------------------------------------------------
 _Release Date: 2020-09-14_
