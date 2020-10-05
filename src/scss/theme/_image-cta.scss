@@ -29,6 +29,11 @@
         // Text and arrow changes to white.
         a {
           color: $su-color-white;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
         }
 
         .su-image-cta-paragraph__link {

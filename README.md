@@ -1,5 +1,5 @@
 # [SOE Basic Theme](https://github.com/SU-SOE/soe_basic)
-##### Version: 8.x-1.0-dev
+##### Version: 8.x-1.x
 
 Changelog: [Changelog.txt](CHANGELOG.txt)
 
