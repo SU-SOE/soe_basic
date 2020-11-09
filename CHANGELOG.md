@@ -1,5 +1,13 @@
 # SOE Basic Sub-Theme
 
+8.x-1.4
+--------------------------------------------------------------------------------
+_Release Date: 2020-11-09_
+
+- Merge pull request #43 from SU-SOE/D8CORE-2873-soe (7a53261)
+- D8CORE-2873: soe fixup. (f93d937)
+- D8CORE-2873: changing the label color to white for SOE (#42) (5568dc8)
+
 8.x-1.3
 --------------------------------------------------------------------------------
 _Release Date: 2020-10-07_
