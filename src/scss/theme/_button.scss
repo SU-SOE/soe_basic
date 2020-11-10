@@ -2,45 +2,47 @@
 // Override Decanter button styles here to use new colors and any other differences
 
 // default button style for this theme is still main red su-button
-a.su-button {
+a {
+  .su-button {
 
-  &.su-link--external {
+    &.su-link--external {
+
+      &:hover,
+      &:focus {
+        &::after {
+          background-color: $su-color-white;
+        }
+      }
+    }
 
     &:hover,
     &:focus {
-      &:after {
-        background-color: $su-color-white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &.soe-button--turquoise {
+      @include soe-button--turquoise;
+
+      &::after {
+        background-color: $soe-color-black;
       }
     }
-  }
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+    &.soe-button--pink {
+      @include soe-button--pink;
 
-  &.soe-button--turquoise {
-    @include soe-button--turquoise;
-
-    &:after {
-      background-color: $soe-color-black;
+      &::after {
+        background-color: $soe-color-black;
+      }
     }
-  }
 
-  &.soe-button--pink {
-    @include soe-button--pink;
+    &.soe-button--orange {
+      @include soe-button--orange;
 
-    &:after {
-      background-color: $soe-color-black;
-    }
-  }
-
-  &.soe-button--orange {
-    @include soe-button--orange;
-
-    &:after {
-      background-color: $soe-color-black;
+      &::after {
+        background-color: $soe-color-black;
+      }
     }
   }
 }
@@ -76,7 +78,7 @@ a.su-button {
   &.stanford-stories-cta-link {
     a {
       &::after {
-        background-color: white;
+        background-color: $su-color-white;
       }
     }
   }
