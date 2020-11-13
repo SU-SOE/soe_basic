@@ -36,3 +36,11 @@ $su-color-bay-blue: #016895;
     text-decoration: underline;
   }
 }
+
+.stanford-image-cta {
+  [data-extlink]{
+    &::after {
+      display: none;
+    }
+  }
+}
