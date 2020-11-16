@@ -47,33 +47,35 @@
 }
 
 // Explore More Events block
+// Events Card
+.su-event-card,
 .stanford-events-more-events-block {
-  .views-col {
-    h2 {
-      a,
-      a:link,
-      a:visited {
-        @include soe-type-sans-base;
-        @include soe--link;
+  
+  h2 {
+    a,
+    a:link,
+    a:visited {
+      @include soe-type-sans-base;
+      @include soe--link;
 
-        &:hover {
-          @include soe--link-hover;
-        }
-
-        &::after {
-          background: $su-color-black;
-          border-bottom: 0;
-        }
+      &:hover {
+        @include soe--link-hover;
       }
-    }
 
-    .su-date-stacked {
-      .su-event-end-date,
-      .su-event-start-date {
-        font-weight: $su-font-black;
+      &::after {
+        background: $su-color-black;
+        border-bottom: 0;
       }
     }
   }
+
+  .su-date-stacked {
+    .su-event-end-date,
+    .su-event-start-date {
+      font-weight: $su-font-black;
+    }
+  }
+  
 
   .more-link {
     a {
@@ -92,6 +94,24 @@
   a {
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+// Specific override for the event module.
+.su-event-card {
+  &.su-event-list-item {
+    .su-event-list-item__details {
+      h2 {
+        > a {
+          &:active,
+          &:hover,
+          &:focus {
+            color: $soe-color-black;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }
