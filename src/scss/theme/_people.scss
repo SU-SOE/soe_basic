@@ -91,13 +91,33 @@ div[class^='stanford-people-grid'] {
     .su-link,
     a {
       color: $soe-color-orange;
+
+      &.su-link--external {
+        &::after {
+          background-color: $soe-color-orange;
+        }
+      }
+
+      svg {
+        fill: $soe-color-orange;
+      }
     }
 
     .su-button {
       color: $su-color-black;
 
+      &.su-link--external {
+        &::after {
+          background-color: $su-color-black;
+        }
+      }
+
       &:hover {
         color: $su-color-white;
+
+        &::after {
+          background-color: $su-color-white;
+        }
       }
     }
 
