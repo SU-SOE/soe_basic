@@ -2,24 +2,48 @@
 // Override Decanter button styles here to use new colors and any other differences
 
 // default button style for this theme is still main red su-button
-.su-button {
+a {
+  .su-button {
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+    &.su-link--external {
 
-  &.soe-button--turquoise {
-    @include soe-button--turquoise;
-  }
+      &:hover,
+      &:focus {
+        &::after {
+          background-color: $su-color-white;
+        }
+      }
+    }
 
-  &.soe-button--pink {
-    @include soe-button--pink;
-  }
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      cursor: pointer;
+    }
 
-  &.soe-button--orange {
-    @include soe-button--orange;
+    &.soe-button--turquoise {
+      @include soe-button--turquoise;
+
+      &::after {
+        background-color: $soe-color-black;
+      }
+    }
+
+    &.soe-button--pink {
+      @include soe-button--pink;
+
+      &::after {
+        background-color: $soe-color-black;
+      }
+    }
+
+    &.soe-button--orange {
+      @include soe-button--orange;
+
+      &::after {
+        background-color: $soe-color-black;
+      }
+    }
   }
 }
 
@@ -33,6 +57,12 @@
     &:focus {
       text-decoration: underline;
     }
+
+    &.su-link--external {
+      &::after {
+        background-color: $soe-color-black;
+      }
+    }
   }
 }
 
@@ -42,6 +72,27 @@
     @include box-shadow('shallow');
   }
 }
+
+// Stories link and button.
+.stanford-stories {
+  &.stanford-stories-cta-link {
+    a {
+      &::after {
+        background-color: $su-color-white;
+      }
+    }
+  }
+}
+
+// Remove the extra external link.
+div {
+  &.su-link--external {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 
 
 

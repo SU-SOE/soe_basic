@@ -20,7 +20,7 @@
     "browserslist": "^4.13.0",
     "caniuse-lite": "^1.0.30001122",
     "css-loader": "^2.1",
-    "decanter": "^6.1.0",
+    "decanter": "^6.2.1",
     "dot-prop": "^5.2.0",
     "drupal-behaviors-loader": "^1.0",
     "element-closest-polyfill": "^1.0.0",
