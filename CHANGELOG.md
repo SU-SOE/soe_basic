@@ -1,5 +1,15 @@
 # SOE Basic Sub-Theme
 
+8.x-1.5
+--------------------------------------------------------------------------------
+_Release Date: 2020-12-04_
+
+- D8CORE-2964: updating the decanter version (#49) (f39f270)
+- D8CORE-3004: Fixing the cards for Events and News to match (#48) (86fb4d3)
+- D8CORE-2282: adding small fix for Engineering Lockup on H, I, and P (#47) (1c3d09f)
+- D8CORE-2670: Styles for external links (#46) (8ed8ecc)
+- DEVOPS-000: Added circleci & github actions jobs (#45) (7e8eee4)
+
 8.x-1.4
 --------------------------------------------------------------------------------
 _Release Date: 2020-11-09_
