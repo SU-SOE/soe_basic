@@ -196,6 +196,16 @@ div[class^='stanford-people-grid'] {
 
       }
     }
+  }
+}
 
+.views-block {
+  &.stanford-person-terms-term-name-h1 {
+    &.block-views {
+      .page-title {
+        @include responsive-spacing('padding', 7 null 7 null);
+        @include margin(0);
+      }
+    }
   }
 }
