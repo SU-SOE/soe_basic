@@ -273,3 +273,9 @@
     margin-top: 0;
   }
 }
+
+.event-series {
+  .section-bgcolor--title {
+    @include modular-spacing('padding', 6 null null null);
+  }
+}
