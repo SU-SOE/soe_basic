@@ -33,6 +33,10 @@
           &:hover,
           &:focus {
             text-decoration: underline;
+
+            &::after {
+              background-color: $su-color-white;
+            }
           }
         }
 
@@ -45,9 +49,17 @@
         }
       }
 
+      .su-link--external {
+        @include link-icon(arrow-up-right, 10px, topright);
+
+        &::after {
+          background-color: $soe-color-black;
+        }
+      }
+
       .su-image-cta-paragraph__link {
         &::after {
-          background-color: $su-color-black;
+          display: none;
         }
       }
     }
@@ -58,6 +70,24 @@
 // Then each card is selected by position.
 // Also sets the black hover color on the text link.
 .su-page-components {
+
+  // Setting up the external link icon to be white on hover all types.
+  > div {
+    div {
+      &.ptype-stanford-image-cta {
+        .su-image-cta-paragraph {
+          &:hover {
+            .su-link--external {
+              &:after {
+                background-color: $su-color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   > div:nth-of-type(even) {
     div {
       &.ptype-stanford-image-cta:first-of-type {
