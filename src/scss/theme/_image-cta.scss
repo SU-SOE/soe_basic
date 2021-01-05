@@ -78,7 +78,7 @@
         .su-image-cta-paragraph {
           &:hover {
             .su-link--external {
-              &:after {
+              &::after {
                 background-color: $su-color-white;
               }
             }
