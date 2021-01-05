@@ -30,6 +30,13 @@ $su-color-bay-blue: #016895;
   }
 }
 
+// External action links
+a {
+  &.su-link--external {
+    text-decoration: inherit;
+  }
+}
+
 // Links have hover underline by default.
 .su-link {
   &:hover {
