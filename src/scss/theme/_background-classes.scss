@@ -72,8 +72,16 @@
 }
 
 .section-bgcolor--title {
-  &.section-event-list--title {
-    padding: 0;
+  &.section-event-list--title,
+  &.section-stanford-news-views-header,
+  &.su-people-header,
+  &.section-header {
+    @include modular-spacing('padding', 6 null 6 null);
+
+    .heading-h1 {
+      margin: 0;
+    }
+
   }
 }
 
