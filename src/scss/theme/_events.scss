@@ -281,9 +281,5 @@
 }
 
 .section-bgcolor--title {
-  @include modular-spacing('padding', 6 null 6 null);
-
-  h1 {
-    margin: 0;
-  }
+  @include modular-spacing('padding', 6 null 5 null);
 }
