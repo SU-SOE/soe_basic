@@ -42,6 +42,12 @@
           color: $su-color-white;
         }
       }
+
+      .su-link--external {
+        &::after {
+          background-color: $su-color-white;
+        }
+      }
     }
   }
 }
