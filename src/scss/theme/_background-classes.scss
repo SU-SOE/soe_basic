@@ -71,6 +71,21 @@
   }
 }
 
+.section-bgcolor--title {
+  &.section-event-list--title,
+  &.section-stanford-news-views-header,
+  &.su-people-header,
+  &.section-header {
+    @include modular-spacing('padding', 6 null 6 null);
+
+    .heading-h1 {
+      margin: 0;
+    }
+
+  }
+}
+
+
 // Person node has a background color
 .person {
   @include gradient--solid-teal;

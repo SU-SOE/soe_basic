@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+// Person header
+.stanford-person-terms-term-name-h1 {
+  .page-title {
+    margin: 0;
+  }
+}
+
 // Person List
 div[class^='stanford-people-grid'] {
 
