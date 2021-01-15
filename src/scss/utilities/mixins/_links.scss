@@ -51,3 +51,22 @@ a {
     }
   }
 }
+
+.su-local-footer {
+  .mailto {
+    text-decoration: none;
+
+    svg {
+      fill: $su-color-bright-red;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+
+      svg {
+        fill: $su-color-black;
+      }
+    }
+  }
+}
