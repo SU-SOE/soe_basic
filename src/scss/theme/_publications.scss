@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+
+.publication {
+
+  .main-region {
+
+    .su-publication-cta {
+      .su-button {
+        @include soe-button--turquoise;
+
+        &.su-link--external {
+          &::after {
+            background-color: $su-color-black;
+          }
+        }
+
+        &:hover {
+          color: $su-color-white;
+
+          &::after {
+            background-color: $su-color-white;
+          }
+        }
+      }
+    }
+
+  }
+
+}
