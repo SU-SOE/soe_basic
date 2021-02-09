@@ -1,5 +1,13 @@
 # SOE Basic Sub-Theme
 
+8.x-1.8
+--------------------------------------------------------------------------------
+_Release Date: 2021-02-08_
+
+- D8CORE-3486: Correcting people link colors and updated Decanter (#58) (a8178ab)
+- D8CORE-3386: fixing the mailto link in footer (#57) (e1bca63)
+- D8CORE-3269: fixing the button padding on SOE (#56) (eb48b34)
+
 8.x-1.7
 --------------------------------------------------------------------------------
 _Release Date: 2020-01-05_
