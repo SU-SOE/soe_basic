@@ -2,7 +2,6 @@
 
 
 .publication {
-
   .main-region {
 
     .su-publication-cta {
@@ -30,8 +29,9 @@
   // More publications cards on the publication node page.
   .su-card__contents {
     h2 {
-      > a {
+      > a:not(.su-link--external) {
         @include soe--link;
+        @include soe-link-icon(soe_arrow, 1.8rem, 0);
 
         display: inline;
         font-weight: $su-font-bold;
@@ -46,23 +46,23 @@
           text-decoration: none;
 
           &::after {
-            background-color: transparent;
-            color: $su-color-black;
             transform: none;
           }
         }
 
         &::after {
-          transform: none;
-          background: url("#{$soe-image-path}/soe_arrow.svg") no-repeat 0 0;
-          background-size: 100%;
-          height: 1.8rem;
-          width: 1.8rem;
-          -webkit-mask: none;
+          background-color: $su-color-black;
         }
+      }
 
-        // Styles for the links without the external link class.
-        &:not(.su-link--external) {
+      > a {
+        &.su-link--external {
+          @include soe--link;
+          @include link-icon(arrow-up-right, 1.3rem, topright);
+
+          &::after {
+            background-color: $su-color-black;
+          }
 
           &:hover,
           &:focus {
@@ -72,22 +72,51 @@
             text-decoration: none;
 
             &::after {
-              background-color: transparent;
-              color: $su-color-black;
               transform: none;
             }
-          }
-
-          &::after {
-            transform: none;
-            background: url("#{$soe-image-path}/soe_arrow.svg") no-repeat 0 0;
-            background-size: 100%;
-            height: 1.8rem;
-            width: 1.8rem;
-            -webkit-mask: none;
           }
         }
       }
     }
   }
 }
+
+
+.view {
+  &.chicago-list,
+  &.apa-list {
+    a {
+      @include soe--link;
+
+      display: inline;
+      font-weight: $su-font-bold;
+      margin: 0;
+      animation: none;
+      color: $su-color-black;
+
+      &:hover,
+      &:focus {
+        @include soe--link-hover;
+
+        text-decoration: none;
+
+        &::after {
+          transform: none;
+        }
+      }
+
+      &::after {
+        background-color: $su-color-black;
+      }
+
+      &.su-link--external {
+        @include link-icon(arrow-up-right, 1.3rem, 0);
+
+        &::after {
+          background-color: $su-color-black;
+        }
+      }
+    }
+  }
+}
+
