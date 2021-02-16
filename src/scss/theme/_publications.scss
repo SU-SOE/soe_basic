@@ -38,6 +38,12 @@
         margin: 0;
         animation: none;
 
+        &::after {
+          background-color: $su-color-black;
+          color: $su-color-black;
+          transform: none;
+        }
+
         &:hover,
         &:focus {
           @include soe--link-hover;
