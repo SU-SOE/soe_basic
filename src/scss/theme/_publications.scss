@@ -87,11 +87,10 @@
   }
 }
 
-
-.view {
-  &.chicago-list,
-  &.apa-list {
-    a {
+// Publications list view
+.stanford-publications {
+  &.view {
+    a:not([class*="button"]) {
       @include soe--link;
 
       display: inline;
@@ -123,6 +122,29 @@
         }
       }
     }
+
+    // Load more button.
+    .js-pager__items {
+      .pager__item {
+        .button {
+          @include button-big;
+          @include box-shadow('shallow');
+
+          background-color: $soe-color-turquoise;
+          color: $soe-color-black;
+
+          &:hover {
+            background-color: $su-color-black;
+            color: $su-color-white;
+          }
+        }
+      }
+    }
+
   }
 }
+
+//// Filter list view
+
+
 
