@@ -75,16 +75,15 @@
   &.section-event-list--title,
   &.section-stanford-news-views-header,
   &.su-people-header,
-  &.section-header {
+  &.section-header,
+  &.section-stanford-pubs-views-header {
     @include modular-spacing('padding', 6 null 6 null);
 
     .heading-h1 {
       margin: 0;
     }
-
   }
 }
-
 
 // Person node has a background color
 .person {
@@ -93,3 +92,9 @@
   color: $su-color-white;
 }
 
+// Publications background header color
+.section-editorial-content {
+  .node-stanford-page-title {
+    margin-top: 0;
+  }
+}

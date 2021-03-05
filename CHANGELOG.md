@@ -1,5 +1,16 @@
 # SOE Basic Sub-Theme
 
+8.x-1.9
+--------------------------------------------------------------------------------
+_Release Date: 2021-03-05_
+
+- D8CORE-3247: Publications styles  (#66) (a487064)
+- Update composer.json for stanford_basic (#65) (586fabc)
+- D8CORE-3528: updating class name to match reality (#64) (a49c69d)
+- D8CORE-3499: fixing the link icons (#61) (a3a1119)
+- D8CORE-3246 D8CORE-3487: fixing the external link icons (#63) (414b076)
+- D8CORE-3248: publication set up for SOE (#59) (af11eda)
+
 8.x-1.8
 --------------------------------------------------------------------------------
 _Release Date: 2021-02-08_
