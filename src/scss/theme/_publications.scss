@@ -27,47 +27,22 @@
   }
 
   // More publications cards on the publication node page.
-  .su-card__contents {
-    h2 {
-      > a:not(.su-link--external) {
-        @include soe--link;
-        @include soe-link-icon(soe_arrow, 1.8rem, 0);
-
-        display: inline;
-        font-weight: $su-font-bold;
-        margin: 0;
-        animation: none;
-
-        &::after {
-          background-color: $su-color-black;
-          color: $su-color-black;
-          transform: none;
-        }
-
-        &:hover,
-        &:focus {
-          @include soe--link-hover;
-
-          color: $su-color-black;
-          text-decoration: none;
-
-          &::after {
-            transform: none;
-          }
-        }
-
-        &::after {
-          background-color: $su-color-black;
-        }
-      }
-
-      > a {
-        &.su-link--external {
+  .su-card {
+    .su-card__contents {
+      h2 {
+        > a:not(.su-link--external) {
           @include soe--link;
-          @include link-icon(arrow-up-right, 1.3rem, topright);
+          @include soe-link-icon(soe_arrow, 1.8rem, 0);
+
+          display: inline;
+          font-weight: $su-font-bold;
+          margin: 0;
+          animation: none;
 
           &::after {
             background-color: $su-color-black;
+            color: $su-color-black;
+            transform: none;
           }
 
           &:hover,
@@ -79,6 +54,33 @@
 
             &::after {
               transform: none;
+            }
+          }
+
+          &::after {
+            background-color: $su-color-black;
+          }
+        }
+
+        > a {
+          &.su-link--external {
+            @include soe--link;
+            @include link-icon(arrow-up-right, 1.3rem, topright);
+
+            &::after {
+              background-color: $su-color-black;
+            }
+
+            &:hover,
+            &:focus {
+              @include soe--link-hover;
+
+              color: $su-color-black;
+              text-decoration: none;
+
+              &::after {
+                transform: none;
+              }
             }
           }
         }
