@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+.ptype-stanford-entity {
+  .su-entity-item {
+    a {
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .ds-entity--stanford-person {
+    a {
+      @include soe--link;
+      @include soe-link-icon(soe_arrow, 1.8rem, 0);
+
+      color: $su-color-black;
+
+      &:hover {
+        @include soe--link-hover;
+      }
+
+      &::after {
+        background-color: $su-color-black;
+      }
+    }
+  }
+}
