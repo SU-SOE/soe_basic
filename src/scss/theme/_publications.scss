@@ -85,6 +85,32 @@
           }
         }
       }
+
+      // Topics list.
+      a {
+        @include small-paragraph;
+
+        color: $su-color-bright-red;
+        font-weight: $su-font-regular;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .su-button--secondary {
+      @include responsive-spacing('margin-top', 0);
+
+      display: inline-block;
+      border: 0;
+      font-weight: $su-font-regular;
+
+      &:hover {
+        border: 0;
+      }
     }
 
     &.views-block {
@@ -109,7 +135,9 @@
 // Publications list view
 .stanford-publications {
   &.view {
-    a:not([class*="button"]) {
+
+    // Filtered results for link at top of filtered page.
+    a {
       @include soe--link;
 
       display: inline;
@@ -161,6 +189,22 @@
     }
 
   }
+
+  // Removing the soe link style from the edit button
+  .views-field-edit-node {
+    .su-button--secondary {
+      @include responsive-spacing('margin-top', 0);
+
+      display: inline-block;
+      border: 0;
+      font-weight: $su-font-regular;
+
+      &:hover {
+        border: 0;
+      }
+    }
+  }
+
 }
 
 // Filter list view
