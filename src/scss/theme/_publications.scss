@@ -1,6 +1,5 @@
 @charset 'UTF-8';
 
-
 .publication {
   .main-region {
 
@@ -90,12 +89,15 @@
       a {
         @include small-paragraph;
 
+        border: 0;
         color: $su-color-bright-red;
         font-weight: $su-font-regular;
         text-decoration: none;
 
         &:hover,
         &:focus {
+          border: 0;
+          color: $su-color-bright-red;
           text-decoration: underline;
         }
       }
