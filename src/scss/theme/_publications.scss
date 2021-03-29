@@ -26,47 +26,22 @@
   }
 
   // More publications cards on the publication node page.
-  .su-card__contents {
-    h2 {
-      > a:not(.su-link--external) {
-        @include soe--link;
-        @include soe-link-icon(soe_arrow, 1.8rem, 0);
-
-        display: inline;
-        font-weight: $su-font-bold;
-        margin: 0;
-        animation: none;
-
-        &::after {
-          background-color: $su-color-black;
-          color: $su-color-black;
-          transform: none;
-        }
-
-        &:hover,
-        &:focus {
-          @include soe--link-hover;
-
-          color: $su-color-black;
-          text-decoration: none;
-
-          &::after {
-            transform: none;
-          }
-        }
-
-        &::after {
-          background-color: $su-color-black;
-        }
-      }
-
-      > a {
-        &.su-link--external {
+  .stanford-publications-related {
+    .su-card__contents {
+      h2 {
+        > a:not(.su-link--external) {
           @include soe--link;
-          @include link-icon(arrow-up-right, 1.3rem, topright);
+          @include soe-link-icon(soe_arrow, 1.8rem, 0);
+
+          display: inline;
+          font-weight: $su-font-bold;
+          margin: 0;
+          animation: none;
 
           &::after {
             background-color: $su-color-black;
+            color: $su-color-black;
+            transform: none;
           }
 
           &:hover,
@@ -80,6 +55,79 @@
               transform: none;
             }
           }
+
+          &::after {
+            background-color: $su-color-black;
+          }
+        }
+
+        > a {
+          &.su-link--external {
+            @include soe--link;
+            @include link-icon(arrow-up-right, 1.3rem, topright);
+
+            &::after {
+              background-color: $su-color-black;
+            }
+
+            &:hover,
+            &:focus {
+              @include soe--link-hover;
+
+              color: $su-color-black;
+              text-decoration: none;
+
+              &::after {
+                transform: none;
+              }
+            }
+          }
+        }
+      }
+
+      // Topics list.
+      a {
+        @include small-paragraph;
+
+        border: 0;
+        color: $su-color-bright-red;
+        font-weight: $su-font-regular;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          border: 0;
+          color: $su-color-bright-red;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .su-button--secondary {
+      @include responsive-spacing('margin-top', 0);
+
+      display: inline-block;
+      border: 0;
+      font-weight: $su-font-regular;
+
+      &:hover {
+        border: 0;
+      }
+    }
+
+    &.views-block {
+      .more-link {
+        > a {
+          background-color: $soe-color-turquoise;
+          color: $soe-color-black;
+          font-weight: $su-font-regular;
+          border: 0;
+
+          &:hover {
+            background-color: $su-color-black;
+            border: 0;
+            color: $su-color-white;
+          }
         }
       }
     }
@@ -89,7 +137,9 @@
 // Publications list view
 .stanford-publications {
   &.view {
-    a:not([class*="button"]) {
+
+    // Filtered results for link at top of filtered page.
+    a {
       @include soe--link;
 
       display: inline;
@@ -141,6 +191,22 @@
     }
 
   }
+
+  // Removing the soe link style from the edit button
+  .views-field-edit-node {
+    .su-button--secondary {
+      @include responsive-spacing('margin-top', 0);
+
+      display: inline-block;
+      border: 0;
+      font-weight: $su-font-regular;
+
+      &:hover {
+        border: 0;
+      }
+    }
+  }
+
 }
 
 // Filter list view
