@@ -206,8 +206,35 @@
       }
     }
   }
-
 }
+
+// Teaser
+.ptype-stanford-entity {
+  .ds-entity--stanford-publication {
+    h2 {
+      a {
+        @include soe--link;
+        @include soe-link-icon(soe_arrow, 1.8rem, 0);
+
+        &::after {
+          background-color: $soe-color-black;
+        }
+
+        &:hover,
+        &:focus {
+          @include soe--link-hover;
+
+          text-decoration: none;
+
+          &::after {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // Filter list view
 // Getting the banner aligned full width
