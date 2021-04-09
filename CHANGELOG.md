@@ -1,5 +1,16 @@
 # SOE Basic Sub-Theme
 
+8.x-1.9
+--------------------------------------------------------------------------------
+_Release Date: 2021-04-09_
+
+- D8CORE-4020: Adding SOE styling for publication teasers (#71) (edeb616)
+- D8CORE-3960: fixin' the publications read more (#69) (99acbf7)
+- Merge pull request #70 from SU-SOE/D8CORE-3983 (c59a693)
+- fixup (acad52d)
+- fixup! (c981b39)
+- D8CORE-3983: fixing the teasers to  have the soe link style (c24aad9)
+
 8.x-1.8
 --------------------------------------------------------------------------------
 _Release Date: 2021-02-08_
