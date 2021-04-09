@@ -1,12 +1,6 @@
 # SOE Basic Sub-Theme
 
-8.x-1.10
---------------------------------------------------------------------------------
-_Release Date: 2021-03-16_
-
-- Hotfix for D8CORE-3499, style fixes for soe arrow and external links
-
-8.x-1.9
+8.x-1.11
 --------------------------------------------------------------------------------
 _Release Date: 2021-03-05_
 
@@ -16,6 +10,12 @@ _Release Date: 2021-03-05_
 - D8CORE-3499: fixing the link icons (#61) (a3a1119)
 - D8CORE-3246 D8CORE-3487: fixing the external link icons (#63) (414b076)
 - D8CORE-3248: publication set up for SOE (#59) (af11eda)
+
+8.x-1.10
+--------------------------------------------------------------------------------
+_Release Date: 2021-03-16_
+
+- Hotfix for D8CORE-3499, style fixes for soe arrow and external links
 
 8.x-1.8
 --------------------------------------------------------------------------------
