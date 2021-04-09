@@ -1,15 +1,21 @@
 # SOE Basic Sub-Theme
 
-8.x-1.9
+8.x-1.11
 --------------------------------------------------------------------------------
-_Release Date: 2021-04-09_
+_Release Date: 2021-03-05_
 
-- D8CORE-4020: Adding SOE styling for publication teasers (#71) (edeb616)
-- D8CORE-3960: fixin' the publications read more (#69) (99acbf7)
-- Merge pull request #70 from SU-SOE/D8CORE-3983 (c59a693)
-- fixup (acad52d)
-- fixup! (c981b39)
-- D8CORE-3983: fixing the teasers to  have the soe link style (c24aad9)
+- D8CORE-3247: Publications styles  (#66) (a487064)
+- Update composer.json for stanford_basic (#65) (586fabc)
+- D8CORE-3528: updating class name to match reality (#64) (a49c69d)
+- D8CORE-3499: fixing the link icons (#61) (a3a1119)
+- D8CORE-3246 D8CORE-3487: fixing the external link icons (#63) (414b076)
+- D8CORE-3248: publication set up for SOE (#59) (af11eda)
+
+8.x-1.10
+--------------------------------------------------------------------------------
+_Release Date: 2021-03-16_
+
+- Hotfix for D8CORE-3499, style fixes for soe arrow and external links
 
 8.x-1.8
 --------------------------------------------------------------------------------
