@@ -2,9 +2,8 @@ name: SOE Basic
 type: theme
 description: 'SOE Branding Subtheme.'
 package: Stanford
-version: 8.x-1.11
-core_version_requirement: ^8 || ^9
-
+version: 8.x-1.12
+core_version_requirement: ^9
 # Defines the base theme
 base theme: stanford_basic
 
@@ -22,10 +21,9 @@ features:
   - favicon
   - logo
 
-component-libraries:
-  basic:
-    paths:
-      - templates
+components:
+  namespaces:
+    basic: templates
 
 libraries:
 #  - stanford_basic/basic

@@ -1,5 +1,14 @@
 # SOE Basic Sub-Theme
 
+8.x-1.12
+--------------------------------------------------------------------------------
+_Release Date: 2021-05-07_
+
+- D8CORE-3970: adding SOE specific event series teaser styles (#76) (ad3a1dc)
+- D8CORE-3991: Correcting the color of the past event label for the gradient banner (#75) (75d7b29)
+- D8CORE-3950: adjusting Past Event list page h1 spacing (#74) (3a91ffc)
+- Updated components definition in the info.yml (#73) (31fa3b7)
+
 8.x-1.11
 --------------------------------------------------------------------------------
 _Release Date: 2021-03-05_
@@ -16,6 +25,7 @@ _Release Date: 2021-03-05_
 _Release Date: 2021-03-16_
 
 - Hotfix for D8CORE-3499, style fixes for soe arrow and external links
+
 
 8.x-1.8
 --------------------------------------------------------------------------------
