@@ -1,6 +1,6 @@
 # SOE Basic Sub-Theme
 
-8.x-1.9
+8.x-1.12
 --------------------------------------------------------------------------------
 _Release Date: 2021-05-07_
 
@@ -8,6 +8,24 @@ _Release Date: 2021-05-07_
 - D8CORE-3991: Correcting the color of the past event label for the gradient banner (#75) (75d7b29)
 - D8CORE-3950: adjusting Past Event list page h1 spacing (#74) (3a91ffc)
 - Updated components definition in the info.yml (#73) (31fa3b7)
+
+8.x-1.11
+--------------------------------------------------------------------------------
+_Release Date: 2021-03-05_
+
+- D8CORE-3247: Publications styles  (#66) (a487064)
+- Update composer.json for stanford_basic (#65) (586fabc)
+- D8CORE-3528: updating class name to match reality (#64) (a49c69d)
+- D8CORE-3499: fixing the link icons (#61) (a3a1119)
+- D8CORE-3246 D8CORE-3487: fixing the external link icons (#63) (414b076)
+- D8CORE-3248: publication set up for SOE (#59) (af11eda)
+
+8.x-1.10
+--------------------------------------------------------------------------------
+_Release Date: 2021-03-16_
+
+- Hotfix for D8CORE-3499, style fixes for soe arrow and external links
+
 
 8.x-1.8
 --------------------------------------------------------------------------------
