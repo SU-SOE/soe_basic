@@ -3,23 +3,23 @@
 // News List
 .stanford-news--list {
   .su-news-list {
-    .su-news-list__item {
-
-      h2 {
-        font-weight: $su-font-black;
-      }
+    .su-news-article {
 
       a {
-        @include soe--link;
 
-        color: $su-color-black;
+        h2 {
+          @include soe--link;
 
-        &:hover {
-          @include soe--link-hover;
-        }
+          font-weight: $su-font-black;
+          color: $su-color-black;
 
-        &::after {
-          background-color: $su-color-black;
+          &:hover {
+            @include soe--link-hover;
+          }
+
+          &::after {
+            background-color: $su-color-black;
+          }
         }
 
       }
@@ -59,9 +59,6 @@
 .stanford-news-vertical-teaser-term,
 .ds-entity--stanford-news {
   .su-news-vertical-teaser {
-    .su-news-vertical-teaser__link {
-      text-decoration: none;
-    }
 
     .su-news-header {
       @include modular-spacing('margin', null 2 2 2);
@@ -116,9 +113,15 @@
   .su-news-vertical-teaser {
     &.su-card {
       .su-news-vertical-teaser__link {
-        &:hover {
+        .su-news-header {
           h2 {
-            text-decoration: none;
+            @include soe--link;
+          }
+
+          &:hover {
+            h2 {
+              @include soe--link-hover;
+            }
           }
         }
       }
