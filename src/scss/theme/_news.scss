@@ -1,27 +1,37 @@
 @charset 'UTF-8';
 
 // News List
-.stanford-news--list {
-  .su-news-list {
-    .su-news-list__item {
+.su-news-list {
+  .su-news-article {
 
+    a {
       h2 {
         font-weight: $su-font-black;
-      }
 
-      a {
         @include soe--link;
 
         color: $su-color-black;
 
+        &:focus,
+        &:active,
         &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        text-decoration: none;
+
+        h2 {
           @include soe--link-hover;
         }
 
-        &::after {
-          background-color: $su-color-black;
-        }
+      }
 
+      &::after {
+        background-color: $su-color-black;
       }
     }
 
@@ -36,6 +46,7 @@
       }
     }
   }
+
 
   // Load more button.
   .js-pager__items {
