@@ -7,6 +7,6 @@
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "require": {
-    "su-sws/stanford_basic": "dev-8.x-5.x"
+    "su-sws/stanford_basic": "^8.5"
   }
 }

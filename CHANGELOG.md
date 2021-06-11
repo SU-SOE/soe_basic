@@ -1,5 +1,12 @@
 # SOE Basic Sub-Theme
 
+8.x-1.9
+--------------------------------------------------------------------------------
+_Release Date: 2021-06-11_
+
+- D8CORE-4090: Subtheme  updates  for news after the refactor (#78) (795a546)
+- Added theme suggestion alter for search block (0eef723)
+
 8.x-1.8
 --------------------------------------------------------------------------------
 _Release Date: 2021-02-08_
