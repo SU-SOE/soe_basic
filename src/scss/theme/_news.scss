@@ -31,8 +31,6 @@
 
         h2 {
           @include soe--link-hover;
-
-          border-bottom-width: 5px;
         }
 
       }
@@ -101,9 +99,7 @@
         &:hover,
         &:focus {
           @include soe--link-hover;
-
-          border-bottom-width: 5px;
-
+          
           &::after {
             transform: none;
           }
