@@ -99,7 +99,7 @@
         &:hover,
         &:focus {
           @include soe--link-hover;
-          
+
           &::after {
             transform: none;
           }
