@@ -64,7 +64,8 @@
 
       a,
       a:link,
-      a:visited {
+      a:visited,
+      a:focus {
         @include soe-type-sans-base;
         @include soe--link;
 
@@ -97,7 +98,8 @@
 
   a,
   a:link,
-  a:visited {
+  a:visited,
+  a:focus {
     color: $soe-color-black;
     font-weight: $su-font-regular;
     text-decoration: none;
@@ -125,6 +127,9 @@
           &:hover,
           &:focus {
             @include soe--link-hover;
+
+            color: $su-color-black;
+            text-decoration: none;
           }
         }
       }
@@ -151,7 +156,8 @@
       color: $su-color-black;
 
       &:visited,
-      &:link {
+      &:link,
+      &:focus {
         @include soe--link-hover;
       }
     }
