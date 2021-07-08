@@ -2,6 +2,11 @@
 
 // News List
 .su-news-list {
+
+  h2 {
+    line-height: 1.5;
+  }
+
   .su-news-article {
 
     a {
@@ -69,6 +74,11 @@
 .stanford-news--cards,
 .stanford-news-vertical-teaser-term,
 .ds-entity--stanford-news {
+
+  h2 {
+    line-height: 1.5;
+  }
+
   .su-news-vertical-teaser {
     .su-news-vertical-teaser__link {
       text-decoration: none;
