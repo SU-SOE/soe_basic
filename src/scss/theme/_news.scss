@@ -51,21 +51,20 @@
       }
     }
   }
+}
 
+// Load more button.
+.js-pager__items {
+  .pager__item {
+    .button {
+      @include box-shadow('shallow');
 
-  // Load more button.
-  .js-pager__items {
-    .pager__item {
-      .button {
-        @include box-shadow('shallow');
+      background-color: $soe-color-turquoise;
+      color: $soe-color-black;
 
-        background-color: $soe-color-turquoise;
-        color: $soe-color-black;
-
-        &:hover {
-          background-color: $su-color-black;
-          color: $su-color-white;
-        }
+      &:hover {
+        background-color: $su-color-black;
+        color: $su-color-white;
       }
     }
   }
