@@ -127,11 +127,11 @@
     > .more-link {
       a {
         background-color: $soe-color-turquoise;
-        border-bottom: none;
+        border-bottom: 0;
         color: $soe-color-black;
 
         &:hover,
-        &:focus, 
+        &:focus,
         &:active {
           background-color: $su-color-black;
           color: $su-color-white;
@@ -140,7 +140,6 @@
         }
       }
     }
-    
 
     // Load more button.
     .js-pager__items {
