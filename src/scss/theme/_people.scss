@@ -38,9 +38,7 @@ div[class^='stanford-people-grid'] {
     @include modular-spacing('padding', 8 null 5 6);
 
     color: $su-color-white;
-    max-width: 100%;
     margin: 0;
-    width: 100%;
 
     @include grid-media-max('sm') {
       .su-quote__media {
