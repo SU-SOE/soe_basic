@@ -1,12 +1,13 @@
 {
-  "name": "su-soe/soe_basic",
-  "description": "SOE Basic Branding Sub-Theme.",
-  "type": "drupal-custom-theme",
-  "homepage": "https://github.com/SU-SOE/soe_basic",
-  "authors": [],
-  "license": "GPL-2.0+",
-  "minimum-stability": "dev",
-  "require": {
-    "su-sws/stanford_basic": "dev-8.x-5.x"
-  }
+    "name": "su-soe/soe_basic",
+    "description": "SOE Basic Branding Sub-Theme.",
+    "type": "drupal-custom-theme",
+    "homepage": "https://github.com/SU-SOE/soe_basic",
+    "authors": [],
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "su-sws/stanford_basic": "^8.5"
+    }
 }
