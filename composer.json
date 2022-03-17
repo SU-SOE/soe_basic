@@ -4,10 +4,10 @@
     "type": "drupal-custom-theme",
     "homepage": "https://github.com/SU-SOE/soe_basic",
     "authors": [],
-    "license": "GPL-2.0+",
+    "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "su-sws/stanford_basic": "^8.5"
+        "su-sws/stanford_basic": "dev-8.x-5.x"
     }
 }
