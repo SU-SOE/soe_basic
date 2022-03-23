@@ -48,6 +48,19 @@
           &:focus {
             text-decoration: underline;
           }
+
+          &.su-link--external {
+            &::after {
+              background-color: $su-color-black;
+            }
+
+            &:hover,
+            &:focus {
+              &::after {
+                background-color: $su-color-white;
+              }
+            }
+          }
         }
       }
     }
