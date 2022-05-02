@@ -8,6 +8,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "su-sws/stanford_basic": "8.x-dev"
+        "su-sws/stanford_basic": "^8.5"
     }
 }
