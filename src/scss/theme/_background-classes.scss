@@ -99,3 +99,33 @@
     margin-top: 0;
   }
 }
+
+
+.section-bgcolor--title {
+  &.section-stanford-news-views-header {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+  }
+  &.section-editorial-content {
+    &.su-people-header,
+    &.section-event-list--title,
+    &.section-pubs-list--title {
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+      position: relative;
+      right: 50%;
+      width: 100vw;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
