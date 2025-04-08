@@ -10,16 +10,6 @@
       &:focus {
         text-decoration: underline;
       }
-
-      &::after {
-        background-color: $su-color-bright-red;
-
-        &:hover,
-        &:focus {
-          background-color: $su-color-black;
-          text-decoration: underline;
-        }
-      }
     }
   }
 
